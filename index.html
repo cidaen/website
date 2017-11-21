@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> CiDAEN | Ciencia de datos y aplicaciones escalables en la nube</title>
+    <script
+  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700|Pacifico|Roboto:400i,500,500i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+    <script src="assets/js/scroll-effect.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CiDAEN</a> <!-- Change to logo -->
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+		  <!--<li><a href="#">Home</a></li>-->
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#content-view">Contenido</a></li>
+            <li><a href="#colaboradores">Colaboradores</a></li>
+            <li><a href="#inscripcion">Inscripción</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+</header>
+
+<!-- Landing page main -->
+
+<section class="hero container-fluid">
+	<div class="background-image">
+		<div id="bannerimage"> </div>
+	</div>
+
+	<div class="bannertext">
+		<div class="edition">
+			<h2> 1º Edición CiDAEN </h2>
+		</div>
+		<h1> Ciencia de datos y aplicaciones escalables en la nube</h1>
+		<h3>Curso de Especialista de la Universidad de Castilla-La Mancha</h3>
+		<h3>30 créditos</h3>
+		<div class="uclmlogo">
+			<a href="http://www.ecdda-1.posgrado.uclm.es" target="_blank">
+				<img alt="UCLM" src="assets/img/uclm.png">
+			</a>
+		</div>
+	</div>
+</section>
+
+<section id="important-info" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-2 col-md-3 col-sm-12">
+			<div id="item-modalidad" class="important-item"> 
+				<h3> Modalidad </h3>
+				<hr class="item-hr">
+				<p id="modalidad-portada"> Semipresencial </p>
+			</div> 
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-12">
+			<div id="item-duracion" class="important-item"> 
+				<h3> Duración </h3>
+				<hr class="item-hr">
+				<p id="duracion-portada"> 6 meses </p>
+				<p id="meses-portada"> (15/01/18-22/07/18) </p>
+				
+			</div> 
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-12">
+			<div id="item-inscripcion" class="important-item"> 
+				<h3> Inscripción </h3>
+				<hr class="item-hr">
+				<p id="pinscripcion-portada"> 15/11/17-09/01/18 </p>
+				<p id="parinscripcion-portada"> (preinscripción) </p>
+				<p id="pmatricula-portada"> 20/11/17-11/01/18 </p>
+				<p id="parmatricula-portada"> (matrícula) </p>
+				
+			</div> 
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-12">
+			<div id="item-orientacion" class="important-item"> 
+				<h3> Orientación </h3>
+				<hr class="item-hr">
+				<p class="item-orientacion-portada"> Titulados universitarios </p>
+				<p class="item-orientacion-portada"> Estudiantes de último de grado</p>
+				<p class="item-orientacion-portada"> Titulados de ciclos formativos de grado superior </p>
+			</div> 
+		</div>
+	</div>
+</section>
+
+<div class="container-fluid instituciones">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-0 col-lg-1 col-lg-offset-2">
+			<div class="institucion">
+				<span class="helper"></span>
+				<h4> Colaboran: </h4>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+				<a href="https://www.dsi.uclm.es" target="_blank">
+				<img alt="DSI" class="logo" src="assets/img/dsi.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+				<a href="https://www.esiiab.uclm.es" target="_blank">
+				<img alt="ESII" class="logo" src="assets/img/esiiab.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+
+				<a href="http://simd.albacete.org" target="_blank">
+				<img alt="SIMD" class="logo" src="assets/img/simd.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-3 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+				<a href="http://www.grupovermon.com/en/" target="_blank">
+				<img alt="Vermon" class="logo-width" src="assets/img/vermon.png" target="_blank">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+				<a href="https://www.opinator.com" target="_blank">
+				<img alt="Opinator" class="logo-width" src="assets/img/opinator.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!-- <div class="placeholder"> </div> -->
+				<a href="https://www.ingeteam.com" target="_blank">
+				<img alt="Ingeteam" class="logo-width" src="assets/img/ingeteam">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Sections -->
+
+<section id="metodologia" class="container-fluid">
+	<div class="background-image">
+		<div id="metodologiaimage"> </div>
+	</div>
+	<div class="metodologia-text">
+		<div class="modalidad-curso">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-6">
+					<h3> Sin necesidad de abandonar tu trabajo </h3>
+					<ul>
+						<li> Clases en streaming, así como en formato webinar, para poder verlas donde y cuando quieras </li>
+						<li> Uso de las últimas tecnologías para la comunicación entre alumnos y profesores </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="practico-curso">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-6">
+					<h3> Con una formación totalmente práctica</h3>
+					<ul>
+						<li> 160 horas de prácticas, para que el conocimiento no se quede en la teoría </li>
+						<li> 4 proyectos dirigidos (capstones) para mostrarlos a futuros empleadores o clientes </li>
+						<li> 1 trabajo final con el objetivo de explorar los aspectos del curso que más te interesen</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="modalidad-curso">
+				<div class="col-md-offset-1 col-md-6">
+					<h3> Prepárate para uno de los trabajos más demandados </h3>
+					<ul>
+						<li> Según el <a href="https://www.ibm.com/analytics/us/en/technology/data-science/quant-crunch.html">reciente estudio de IBM</a>, para 2020, el 
+						número de ofertas de trabajo se habrá incrementado un 15% (364000 nuevas ofertas de trabajo)</li>
+						<li> Tanto el perfil de Data Scientist como el de Data Engineers (a los que está orientado este curso) ocupan el primer y tercer puesto en el 
+							ranking de los mejores trabajos de America según <a href="https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm">la empresa Glassdoor</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="clear"> </div>
+</section>
+
+
+<section id="content-view">
+	<div id="content" class="container">
+	<div class="background-image">
+		<div id="contentimage"> </div>
+	</div>
+		<h1> Contenido </h1>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+		  <div class="panel panel-default module">
+		    <div class="panel-heading" role="tab">
+		      <h4 class="panel-title">
+			<a class="module-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				1. Introducción a la ciencia de datos. Herramientas básicas. 
+		        </a>
+		      </h4>
+		    </div>
+
+		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+			      Objetivos: 
+			      <ul> 
+				      <li> Aprender en qué consiste la ciencia de datos y qué problemas trata de resolver </li>
+				      <li> Realizar análisis numéricos usando numpy </li>
+				      <li> Manipular datos usando pandas </li>
+				      <li> Crear gráficos usando matplotlib</li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				2. Recolección, preparación y almacenamiento de datos.
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Usar los formatos más comunes de datos presentes en aplicaciones reales</li>
+				      <li> Adquirir datos a partir de páginas web mediante scrapping </li>
+				      <li> Preprocesar y manipular datos para prepararlos para el análisis </li>
+				      <li> Conocer la filosofía NoSQL mediante el uso de MongoDB </li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingThree">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				3. Exploración y visualización de datos.
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Aprender en qué consisten las medidas de tendencia central, no central y dispersión </li>
+				      <li> Realizar análisis exploratorio de datos como medio de elaboración de hipótesis </li>
+				      <li> Visualizar datos con gráficos de tipo exploratorio usando seaborn </li>
+			      </ul>
+
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="panel panel-default capstone">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
+				Capstone 1	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Estamos últimando los detalles de este capstone. Próximamente actualizaremos este apartado con más información.
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+				4. Fundamentos de Machine Learning.	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Conocer las principales técnicas de evaluación y métodos de validación </li>
+				      <li> Introducir las características principales de los algoritmos de clasificación, regresión y clustering más utilizados </li>
+				      <li> Introducir scikit-learn, como herramienta para el uso y validación de algoritmos de machine learning</li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
+				5. Text mining, redes sociales y sistemas de recomendación. 
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Conocer las principales técnicas de análisis del lenguaje natural </li>
+				      <li> Aprender a realizar análisis sobre información en forma de grafo fruto de redes sociales </li>
+				      <li> Comprender los principales algoritmos para la elaboración de recomendaciones de manera automática. </li>
+			      </ul>
+
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default capstone">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapseTwo">
+				Capstone 2	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Estamos últimando los detalles de este capstone. Próximamente actualizaremos este apartado con más información.
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapseTwo">
+				6. Big Data I: Computación escalable.	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Introducir la problemática asociada a la computación escalable y el Big Data. </li>
+				      <li> Procesamiento de datos usando Spark </li>
+				      <li> Análisis de datos usando Spark SQL . </li>
+				      <li> Análisis de datos usando Spark SQL y MLlib. </li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapseTwo">
+				7. Big Data II: Servicios en la nube.	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Conocer cómo hacer uso de la computación elástica. </li>
+				      <li> Principales APIs para almacenamiento de datos </li>
+				      <li> Lanzar clusters de Spark en la nube </li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapseTwo">
+				8. Series temporales, detección de anomalías y flujos de datos. 
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Aprender a analizar información temporal. </li>
+				      <li> Conocer las principales técnicas para la detección de anomalías. </li>
+				      <li> Comprender las principales técnicas para utilizar y analizar flujos de datos </li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+
+	<div class="panel panel-default capstone">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapseTwo">
+				Capstone 3 
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Estamos últimando los detalles de este capstone. Próximamente actualizaremos este apartado con más información.
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapseTwo">
+				9. Deep learning y aplicaciones.
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul> 
+				      <li> Introducir las principales técnicas de Deep Learning. </li>
+				      <li> Uso de Deep Learning para análisis de imágenes. </li>
+				      <li> Uso de Tensorflow para la implementación de redes de Deep Learning. </li>
+
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapseTwo">
+				10. Creación de servicios y apps basados en ciencia de datos. 
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos: 
+				<ul> 
+				      <li> Conocer los conceptos básicos de la creación de servicios. </li>
+				      <li> Crear servicios mediante Flask. </li>
+				      <li> Introducir la computación serverless. </li>
+				      <li> Uso de APIs de Machine Learning. </li>
+
+			      </ul>
+		      
+
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default capstone">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapseTwo">
+				Capstone 4	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Estamos últimando los detalles de este capstone. Próximamente actualizaremos este apartado con más información.
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="panel panel-default final">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapseTwo">
+				Trabajo final	
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Estamos últimando los detalles del trabajo final. Próximamente actualizaremos este apartado con más información.
+
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="colaboradores" class="container-fluid">
+	<div class="background-image">
+		<div id="colaboradoresimage"> </div>
+	</div>
+		<h2> Profesorado </h2>
+		<div class="colaborator-sec container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>Luis de la Ossa Jiménez </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+						<h5>Pablo Bermejo López	</h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>José Antonio Gámez Martín	</h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+						<h5>Juan Ángel Aledo Sánchez	</h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>Jose Miguel Puerta Callejón	</h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+						<h5>María Julia Flores Gallego </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>María Teresa Alonso Martínez </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+						<h5>Jacinto Arias Martínez  </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>Enrique González Rodrigo </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+						<h5>Javier Cózar del Olmo </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>Daniel González Medina </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+						<h5>Cristina Romero González </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+						<h5>Fernando Rubio Perona </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+							<h5>Juan Ignacio Alonso Barba</h5>
+							<p>Servicios y Desarrollos Grupo Vermon</p>
+					</div>
+				</div>
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="colaborator only-colaborator">
+							<h5>Jesus Martínez Gómez</h5>
+							<p>Servicios y Desarrollos Grupo Vermon</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</section>
+		
+<section id="inscripcion">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-3 text-center inscripcion-item">
+				<h3 class="inscripcion-head"> ¡No te quedes sin tu plaza! </h3>
+				<p class="inscripcion-content"> Nº de plazas: 25 </p>
+			</div> 
+			<div class="col-md-4 text-center inscripcion-item">
+				<h3 class="inscripcion-head"> Matrícula abierta</h3>
+				<p id="block-inscribete"> <a id="btn-inscribete" href="https://tp.uclm.es/preinscripcion.aspx?id=1850" target="_blank"> Inscríbete </a> </p>
+				<p id="matricula-proxima">Es necesario un usuario de la UCLM. Si no lo tienes, puedes crear uno nuevo en la página de la inscripción</p>
+
+			</div> 
+			<div class="col-md-3 text-center inscripcion-item">
+				<h3 class="inscripcion-head"> Precio de matrícula </h3>
+				<p class="inscripcion-content"> 1600€* </p>
+				<p id="matricula-proxima">*Bonificación del 25% a los 5 estudiantes con mejor expediente del Master Universitario en Ingeniería Informática</p>
+			</div> 
+		</div>
+		<p id="pregunta"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;"> ¿Tienes alguna pregunta? </a> <p>
+	</div>
+
+	
+</section>
+
+
+
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-2 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 footer-panel">
+				<div class="contacto">
+					<h3> Contacto </h3>
+					<table>
+						<tr> 
+							<td> 
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x outer"></i>
+									<i class="fa fa-envelope fa-stack-1x inner"></i> 
+								</span>
+							</td>
+							<td> 
+								<p class="mail"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;"> &#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;</a> </p>
+							</td>
+						</tr>
+						<tr> 
+							<td> 
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x outer"></i>
+									<i class="fa fa-phone fa-stack-1x inner"></i> 
+								</span>
+							</td>
+							<td> 
+								<p class="telefono"> 
+									967 59 92 00 (Ext. 2620) 
+								</p>
+							</td>
+						</tr>
+						<tr> 
+							<td> 
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x outer"></i>
+									<i class="fa fa-info fa-stack-1x inner"></i> 
+								</span>
+							</td>
+							<td> 
+								<p class="telefono"> 
+									<a href="http://www.ecdda-1.posgrado.uclm.es" target="_blank"> Información oficial del curso </a>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div> 
+			<div class="col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 footer-panel">
+				<div class="redes-sociales">
+					<h3> Síguenos </h3>
+					<table>
+						<tr>
+							<td>
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x outer"></i>
+									<i class="fa fa-facebook fa-stack-1x inner"></i> 
+								</span>
+							</td>
+							<td>
+								<p> <a href="#" target="_blank">Facebook</a> </p> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x outer"></i>
+									<i class="fa fa-twitter fa-stack-1x inner"></i> 
+								</span>
+							</td>
+							<td>
+								<p> <a href="https://twitter.com/cidaen" target="_blank">Twitter</a> </p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x outer"></i>
+									<i class="fa fa-google fa-stack-1x inner"></i> 
+								</span>
+							</td>
+							<td>
+								<p> <a href="#" target="_blank">Google</a> </p> 
+							</td>
+						</tr>
+
+					</table>
+				</div>
+			</div> 
+			<div class="col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center footer-panel">
+				<div class="direccion">
+					<h3> Dirección </h3>
+					<p class="ldireccion"> Escuela Superior de Ingeniería Informática de Albacete </p>
+					<p class="ldireccion"> Edificio Infante Don Juan Manuel </p>
+					<p class="ldireccion"> Avda. de España s/n </p>
+					<p class="ldireccion"> 02071 Albacete </p> 
+				</div>
+			</div> 
+		</div>
+	</div>
+</footer>
+
+</body>
+
+</html>

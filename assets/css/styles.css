@@ -1,0 +1,846 @@
+/* 
+/* RGB */
+$color1: rgba(62, 90, 109, 1); #3e5a6d Dark Blue 
+$color2: rgba(182, 216, 234, 1); #b6d8ea Light Blue
+$color3: rgba(131, 172, 192, 1); #83acc0 Medium blue
+$color4: rgba(180, 191, 198, 1); #b4bfc6 Gray
+$color5: rgba(34, 34, 34, 1); #222222 Blackish
+ */
+/*-------------
+ 	General
+-------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.section-separator {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(182, 216, 234, 0), rgba(182, 216, 234, 1), rgba(182, 216, 234, 0));
+}
+
+
+/*----------------
+	Nav 	
+----------------*/
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-default {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: rgba(180, 191, 198, 1);
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: rgba(190, 201, 208, 1);
+}
+
+.navbar-default .navbar-text {
+  color: rgba(180, 191, 198, 1);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: rgba(180, 191, 198, 1);
+  font-size: 16px;
+  margin-right: 20px;
+  transition: color 300ms ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: rgba(190, 201, 208, 1);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: rgba(180, 191, 198, 1);
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: rgba(180, 191, 198, 1);
+}
+
+.navbar-default .navbar-toggle {
+  color: rgba(131, 172, 192, 1);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(131, 172, 192, 1);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(34, 34, 34, 1); 
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: rgba(34, 34, 34, 1);
+}
+
+.navbar-default .navbar-link {
+  color: red;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #ffbbbc;
+  background-color: rgba(34, 34, 34, 1);
+  opacity: 0.90;
+}
+
+@media (max-width: 767px) {
+	.navbar-collapse {
+		background-color: rgba(34, 34, 34, 1);
+		text-align: center;
+	}
+}
+
+
+.navbar-fixed-top.scrolled {
+  background-color: rgba(62, 90, 109, 1);
+  transition: background-color 200ms linear;
+}
+
+.changedirection {
+          unicode-bidi: bidi-override;
+	  direction: rtl;
+}
+
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero {
+	position: relative;
+	height: 64vh;
+	color: #fff;
+	padding-top: 10vh;
+}
+
+#bannerimage {
+	background-image: url(../img/visualizationweb.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	filter: grayscale(40%);
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(62, 90, 109, 1);
+	opacity: 0.75;
+}
+
+.hero .bannertext {
+	text-align: center;
+	margin-top: 80px;
+}
+
+.hero .bannertext .edition {
+	margin-bottom: auto;
+	display: inline-block;
+	background-color: rgba(34, 34, 34, 1);
+	border-radius: 50px;
+}
+
+.hero .bannertext .edition h2 {
+	margin:0;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	color: rgba(180, 191, 198, 1);
+	padding: 10px 25px 8px 25px;
+}
+
+.hero .bannertext .uclmlogo img {
+	margin-top: 10px;
+}
+
+.hero .bannertext .uclmlogo img {
+	width:80px;
+}
+
+
+.hero h1{
+	margin-top: 20px;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.hero a.btn{
+	padding: 20px 46px;
+}
+
+@media (max-width: 992px){
+
+	.hero {
+		min-height: 700px;
+	}
+}
+
+@media (max-width: 768px){
+
+	.hero h1 {
+		font-size: 36px;
+	}
+}
+
+
+/*--------------------
+	Important Info	
+---------------------*/
+
+#important-info {
+	min-height: 20vh;
+	margin-top: 1vh;
+}
+
+.important-item {
+	text-align: center;
+}
+
+.important-item h3 {
+    color: rgba(62, 90, 109, 1);
+    font-family: Pacifico, cursive;
+    font-size: 30px;
+}
+
+#item-duracion h4 {
+	color:red;
+}
+
+.item-hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 2px;
+    width: 60%;
+    background-image: linear-gradient(to right, rgba(182, 216, 234, 0), rgba(182, 216, 234, 1), rgba(182, 216, 234, 0));
+}
+
+#modalidad-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 30px;
+	margin-top: 35px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+#duracion-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 30px;
+	margin-top: 20px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+#meses-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 15px;
+	margin-top: 5px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+			
+#pinscripcion-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+#parinscripcion-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 14px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+#pmatricula-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+#parmatricula-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 14px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+					
+
+.item-orientacion-portada {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 18px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+.instituciones {
+	margin: 1vh auto 1vh auto;
+}
+
+.institucion {
+	height: 10vh;
+	width: 100%;
+	white-space: nowrap;
+	text-align: center; 
+	margin: 1em 0;
+}
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.placeholder {
+	display: inline-block;
+	background-color: black;
+	height: 60px;
+	width: 120px;
+	vertical-align: middle;
+}
+
+.institucion h4 {
+	display: inline-block;
+	color: #3e5a6d;
+	font-size: 24px;
+	vertical-align: middle;
+    	font-family: Pacifico, cursive;
+}
+
+.institucion .logo {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%; 
+	vertical-align: middle;
+}
+
+.institucion .logo-width {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%; 
+	vertical-align: middle;
+}
+
+@media (max-width: 768px){
+
+	.hero {
+		min-height: 700px;
+	}
+
+	#important-info {
+		min-height: 700px;
+	}
+
+	.important-item {
+		margin-bottom: 40px;
+	}
+}
+
+
+/*----------------
+ 	Metodología section
+----------------*/
+
+#metodologia {
+	position: relative;
+	height: auto;
+	min-height: 100vh;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+.clear {
+	clear: both;
+}
+
+#metodologiaimage {
+	background-image: url(../img/neural.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	filter: grayscale(40%);
+}
+
+#metodologia .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+#metodologia .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(62, 90, 109, 1);
+	opacity: 0.75;
+}
+
+/*
+#metodologia .bannertext {
+	text-align: center;
+	margin-top: 80px;
+}
+
+#metodologia  .bannertext .edition {
+	margin-bottom: auto;
+	display: inline-block;
+	background-color: rgba(34, 34, 34, 1);
+	border-radius: 50px;
+}
+
+#metodologia .bannertext .edition h2 {
+	text-align: center;
+	margin:0;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	color: #b4bfc6;
+	padding: 10px 25px 8px 25px;
+}
+
+#metodologia .bannertext .uclmlogo img {
+	margin-top: 10px;
+}
+
+#metodologia .bannertext .uclmlogo img {
+	width:80px;
+}
+
+
+#metodologia h1{
+	margin-top: 20px;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	margin-bottom: 15px;
+	text-align: left;
+	color: #b4bfc6;
+}
+
+*/
+
+#metodologia h3{
+	font-family: Roboto, cursive;
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #b4bfc6;
+	text-align: left;
+}
+
+#metodologia h4{
+	font-family: Roboto, cursive;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #b4bfc6;
+	text-align: center;
+}
+
+/*
+#metodologia .job {
+	margin-top: 20px;
+	border: 1px solid #b4bfc6;
+}
+
+#metodologia .job h3 {
+	text-align: center;
+}
+*/
+
+#metodologia .modalidad-curso {
+	margin-top: 30px;
+}
+
+#metodologia a {
+  transition: color 300ms ease;
+  color: rgba(180, 191, 198, 1);
+}
+
+#metodologia a:hover {
+  	color:  rgba(190, 201, 208, 1);
+	text-decoration: none;
+}
+
+#metodologia .modalidad-curso li{
+	font-family: Roboto, cursive;
+	font-size: 18px;
+	margin-top: 15px;
+	font-style: italic;
+	font-weight: 400;
+	color: #b4bfc6;
+}
+
+#metodologia .practico-curso {
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+#metodologia .practico-curso li{
+	font-family: Roboto, cursive;
+	font-size: 18px;
+	margin-top: 15px;
+	font-style: italic;
+	font-weight: 400;
+	color: #b4bfc6;
+}
+
+
+
+/*--------------------
+	Content	
+---------------------*/
+
+
+#content {
+	padding-top: 60px;
+	margin-bottom: 20px;
+}
+
+
+#content > h1 {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 30px;
+	font-family: 'Barlow Condensed', sans-serif; 
+	color: rgba(34, 34, 34, 1); 
+}
+
+#content .module .panel-heading {
+	background-color: #ccd7ea;
+}
+
+#content .module .panel-heading a {
+	color: #222222;
+}
+
+#content .module {
+	margin-bottom: 10px;
+}
+
+#content .capstone {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+ 
+
+#content .capstone .panel-heading a {
+	color: #b4bfc6;
+}
+
+#content .capstone .panel-heading {
+	text-align: center;
+	background-color: #3e5a6d; 
+}
+
+#content .final {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content .final .panel-heading {
+	text-align: center;
+	background-color: #222222;
+}
+
+#content .final .panel-heading a {
+	color: #b4bfc6;
+}
+
+
+/*--------------------
+	Colaboradores 	
+---------------------*/
+#colaboradores {
+	position: relative;
+	height: auto;
+	min-height: 100vh;
+	color: #fff;
+	padding-top: 80px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#colaboradores h1{
+	margin-bottom: 50px;
+}
+
+#colaboradores h2 {
+	padding: 20px 10px 20px 10px;
+	display: inline-block;
+	background-color: rgba(34, 34, 34, 1);
+	border-radius: 50px;
+}
+
+#colaboradoresimage {
+	background-image: url(../img/colaboradores.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	filter: grayscale(40%);
+}
+
+#colaboradores .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+#colaboradores .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(62, 90, 109, 1);
+	opacity: 0.75;
+}
+
+#colaboradores > h1,h2 {
+	color: #b4bfc6; /*#83acc0;*/
+	text-align: center;
+}
+
+.colaborator {
+	margin: 20px 0;
+	border: 1px solid white; 
+	background-color: rgba(34, 34, 34, 0.75);
+}
+.colaborator h5{
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.only-colaborator {
+	width: 80%;
+	margin: 20px auto;
+}
+
+
+/*----------------------
+ 	Inscripcion	
+----------------------*/
+
+#inscripcion {
+	margin-top: 60px;
+	padding-top: 60px;
+	margin-bottom: 60px; 
+}
+
+.inscripcion-item {
+	margin-bottom: 80px;
+}
+
+#pregunta {
+	text-align: center;
+	color: rgba(62, 90, 109, 1);
+	margin-top: 50px;
+    	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.inscripcion-head {
+    color: rgba(62, 90, 109, 1);
+    font-family: Pacifico, cursive;
+    font-size: 30px;
+}
+
+.inscripcion-content {
+    margin-top: 40px;
+    color: #222222;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+}
+
+
+#block-inscribete {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#matricula-proxima {
+	color: #a9b3ba;
+}
+
+#btn-inscribete {
+  background: #555;
+  background-image: -webkit-linear-gradient(top, #555, #222222);
+  background-image: -moz-linear-gradient(top, #555, #222222);
+  background-image: -ms-linear-gradient(top, #555, #222222);
+  background-image: -o-linear-gradient(top, #555, #222222);
+  background-image: linear-gradient(to bottom, #555, #222222);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #b4bfc6;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+#btn-inscribete:hover {
+  background: #666;
+  background-image: -webkit-linear-gradient(top, #666, #444);
+  background-image: -moz-linear-gradient(top, #666, #444);
+  background-image: -ms-linear-gradient(top, #666, #444);
+  background-image: -o-linear-gradient(top, #666, #444);
+  background-image: linear-gradient(to bottom, #666, #444);
+  text-decoration: none;
+}
+
+
+/*-------------
+ 	Footer
+-------------*/
+
+
+footer {
+	color: #b4bfc6;;
+	background-color: #414a4f;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+footer a:hover {
+  	color:  rgba(190, 201, 208, 1);
+	text-decoration: none;
+}
+
+footer a:hover .inner {
+	color: #333;
+}
+
+footer a:hover .outer {
+	color:  rgba(190, 201, 208, 1);
+}
+
+footer i .outer {
+	color: #b4bfc6;
+}
+
+footer i.inner {
+	color: #222;
+}
+
+footer .mail {
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 0 5px;
+}
+
+footer .redes-sociales p {
+	margin: 0 0 0 5px;
+
+}
+
+footer .telefono {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+}
+
+@media (max-width: 767px) {
+	footer .footer-panel {
+		margin-bottom: 40px;
+	}
+}
+
+
+footer table tr td {
+	vertical-align: middle;
+	padding: 10px 0;
+}
+
+
+footer table {
+	margin: auto;
+}
+
+
+footer h3 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+footer .ldireccion {
+	font-size: 16px;
+	margin: 15px;
+
+}
+
