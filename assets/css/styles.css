@@ -291,8 +291,8 @@ header {
 
 #meses-portada {
 	color: rgba(34, 34, 34, 1); 
-	font-size: 15px;
-	margin-top: 5px;
+	font-size: 16px;
+	margin-top: 1px;
 	font-family: 'Barlow Condensed', sans-serif; 
 }
 			
@@ -310,10 +310,19 @@ header {
 	font-family: 'Barlow Condensed', sans-serif; 
 }
 
+#pmatricula-portada-prev {
+	color: rgba(34, 34, 34, 1); 
+	font-size: 16px;
+	margin-top: 1px;
+	margin-bottom: 0px;
+	font-family: 'Barlow Condensed', sans-serif; 
+}
+
+
 #pmatricula-portada {
 	color: rgba(34, 34, 34, 1); 
-	font-size: 20px;
-	margin-top: 10px;
+	font-size: 30px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	font-family: 'Barlow Condensed', sans-serif; 
 }
