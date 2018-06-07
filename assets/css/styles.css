@@ -205,7 +205,7 @@ header {
 }
 
 .hero .bannertext .uclmlogo img {
-	width:80px;
+	width:180px;
 }
 
 
@@ -278,7 +278,7 @@ header {
 #modalidad-portada {
 	color: rgba(34, 34, 34, 1); 
 	font-size: 30px;
-	margin-top: 35px;
+	margin-top: 20px;
 	font-family: 'Barlow Condensed', sans-serif; 
 }
 
@@ -322,7 +322,7 @@ header {
 #pmatricula-portada {
 	color: rgba(34, 34, 34, 1); 
 	font-size: 30px;
-	margin-top: 0px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	font-family: 'Barlow Condensed', sans-serif; 
 }
