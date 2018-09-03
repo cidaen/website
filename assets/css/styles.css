@@ -321,15 +321,17 @@ header {
 
 #pmatricula-portada {
 	color: rgba(34, 34, 34, 1); 
-	font-size: 30px;
-	margin-top: 20px;
+	font-size: 20px;
+	margin-top: 5px;
 	margin-bottom: 0px;
 	font-family: 'Barlow Condensed', sans-serif; 
 }
 
 #parmatricula-portada {
 	color: rgba(34, 34, 34, 1); 
-	font-size: 14px;
+	font-size: 20px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 	font-family: 'Barlow Condensed', sans-serif; 
 }
 					
