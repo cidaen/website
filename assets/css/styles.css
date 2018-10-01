@@ -327,6 +327,11 @@ header {
 	font-family: 'Barlow Condensed', sans-serif; 
 }
 
+#preinscripcion-fin {
+	color: rgba(227, 53, 53, 1); 
+	font-weight: 700;
+}
+
 #parmatricula-portada {
 	color: rgba(34, 34, 34, 1); 
 	font-size: 20px;
