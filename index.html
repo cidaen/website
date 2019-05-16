@@ -1,3 +1,20 @@
+---
+title: CiDAEN
+subtitle: Ciencia de datos y aplicaciones escalables en la nube
+url: "http://www.cidaen.es/"
+edicion: 3
+url_oficial: "http://www.ecdda-2.posgrado.uclm.es"
+url_inscripcion: mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;
+preinscripcion_ini: "15/05/2019"
+preinscripcion_fin: "27/09/2019"
+matricula_ini: "30/09/2019"
+matricula_fin: "05/10/2019"
+curso_ini: "07/10/2019"
+curso_fin: "26/06/2020"
+duracion: "9 meses"
+precio: 1600
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,13 +23,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="CiDAEN | Ciencia de Datos y Aplicaciones Escalables en la Nube">
     <meta property="og:description" content="Curso de Ciencia de Datos y Aplicaciones Escalables en la Nube organizado por la Universidad de Castilla-La Mancha">
-    <meta property="og:url" content="http://www.cidaen.es">
+    <meta property="og:url" content="{{ page.url }}">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.cidaen.es/assets/img/logosn.jpg">
+    <meta property="og:image" content="{{ page.url }}/assets/img/logosn.jpg">
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="400">
     <meta property="og:image:height" content="400">
-    <title> CiDAEN | Ciencia de datos y aplicaciones escalables en la nube</title>
+    <title>{{ page.title }} | {{ page.subtitle }}</title>
     <script
   	src="https://code.jquery.com/jquery-3.2.1.min.js"
   	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -21,7 +38,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/styles.css"> 
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/scroll-effect.js"></script>
 </head>
 
@@ -37,9 +54,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">CiDAEN</a> <!-- Change to logo -->
+          <a class="navbar-brand" href="index.html">{{ page.title }}</a> <!-- Change to logo -->
         </div>
-    
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -63,13 +80,13 @@
 
 	<div class="bannertext">
 		<div class="edition">
-			<h2> 2º Edición CiDAEN </h2>
+			<h2>{{ page.edicion }}º Edición {{ page.title }}</h2>
 		</div>
-		<h1> Ciencia de datos y aplicaciones escalables en la nube</h1>
+		<h1>{{ page.subtitle }}</h1>
 		<h3>Curso de Especialista - Universidad de Castilla-La Mancha</h3>
 		<h3>30 créditos</h3>
 		<div class="uclmlogo">
-			<a href="http://www.ecdda-1.posgrado.uclm.es" target="_blank">
+			<a href="{{ page.url_oficial }}" target="_blank">
 				<img alt="UCLM" src="assets/img/uclm.png">
 			</a>
 		</div>
@@ -79,42 +96,42 @@
 <section id="important-info" class="container-fluid">
 	<div class="row">
 		<div class="col-lg-offset-2 col-lg-2 col-md-3 col-sm-12">
-			<div id="item-modalidad" class="important-item"> 
-				<h3> Modalidad </h3>
+			<div id="item-modalidad" class="important-item">
+				<h3>Modalidad</h3>
 				<hr class="item-hr">
-				<p id="modalidad-portada"> Online </p>
-				<p id="meses-portada">(Opción semipresencial)</p>
-			</div> 
+				<p id="modalidad-portada">Online</p>
+				<!--p id="meses-portada">(Opción semipresencial)</p-->
+			</div>
 		</div>
 		<div class="col-lg-2 col-md-3 col-sm-12">
-			<div id="item-duracion" class="important-item"> 
+			<div id="item-duracion" class="important-item">
 				<h3> Duración </h3>
 				<hr class="item-hr">
-				<p id="duracion-portada"> 9 meses </p>
-				<p id="meses-portada"><b> (15/10/18-28/06/19) </b></p>
-				
-			</div> 
+				<p id="duracion-portada">{{ page.duracion }}</p>
+				<p id="meses-portada"><b>({{ page.curso_ini }}-{{ page.curso_fin }}) </b></p>
+
+			</div>
 		</div>
 		<div class="col-lg-2 col-md-3 col-sm-12">
-			<div id="item-inscripcion" class="important-item"> 
+			<div id="item-inscripcion" class="important-item">
 				<h3> Inscripción </h3>
 				<hr class="item-hr">
         <!--<p id="pmatricula-portada-prev"><strike> 20/11/17-11/01/18 </strike></p>-->
         <p id="pmatricula-portada"> <b>Preinscripción</b> </p>
-        <p id="pmatricula-portada"> 01/06/18-<span id="preinscripcion-fin">12/10/18</span></p>
-        <p id="parmatricula-portada"><b> Plazo de matrícula </b></p>
-        <p id="parmatricula-portada"> 01/10/2018-12/10/2018 </p>
-				
-			</div> 
+        <p id="pmatricula-portada">{{ page.preinscripcion_ini }}-<span id="preinscripcion-fin">{{ page.preinscripcion_fin }}</span></p>
+        <p id="parmatricula-portada"><b>Plazo de matrícula</b></p>
+        <p id="parmatricula-portada">{{ page.matricula_ini }}-{{ page.matricula_fin }} </p>
+
+			</div>
 		</div>
 		<div class="col-lg-2 col-md-3 col-sm-12">
-			<div id="item-orientacion" class="important-item"> 
+			<div id="item-orientacion" class="important-item">
 				<h3> Orientación </h3>
 				<hr class="item-hr">
 				<p class="item-orientacion-portada"> Titulados universitarios </p>
 				<p class="item-orientacion-portada"> Estudiantes de último curso de grado</p>
 				<p class="item-orientacion-portada"> Titulados de ciclos formativos de grado superior </p>
-			</div> 
+			</div>
 		</div>
 	</div>
 </section>
@@ -124,7 +141,7 @@
 		<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-0 col-lg-1 col-lg-offset-2">
 			<div class="institucion">
 				<span class="helper"></span>
-				<h4> Colaboran: </h4>
+				<h4>Organizan: </h4>
 			</div>
 		</div>
 
@@ -156,6 +173,15 @@
 				</a>
 			</div>
 		</div>
+	</div>
+  <div class="row">
+		<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-0 col-lg-1 col-lg-offset-2">
+			<div class="institucion">
+				<span class="helper"></span>
+				<h4>Colaboran: </h4>
+			</div>
+		</div>
+
 		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-3 col-lg-1 col-lg-offset-0">
 			<div class="institucion">
 				<span class="helper"></span>
@@ -180,6 +206,34 @@
 				<!-- <div class="placeholder"> </div> -->
 				<a href="https://demosense.com" target="_blank">
 				<img alt="Ingeteam" class="logo-width" src="assets/img/demosense.jpg">
+				</a>
+			</div>
+		</div>
+    <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+				<a href="https://www.advantic.es/" target="_blank">
+				<img alt="Advantic" class="logo" src="assets/img/advantic.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+				<a href="https://www.futurespace.es/" target="_blank">
+				<img alt="FutureSpace" class="logo" src="assets/img/futurespace.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0">
+			<div class="institucion">
+				<span class="helper"></span>
+				<!--<div class="placeholder"> </div>-->
+
+				<a href="https://www.mifarma.es/" target="_blank">
+				<img alt="MiFarma" class="logo" src="assets/img/mifarma.png">
 				</a>
 			</div>
 		</div>
@@ -210,9 +264,7 @@
 					<h3> Con una formación totalmente práctica</h3>
 					<ul>
 						<li> 160 horas de prácticas, para que el conocimiento no se quede en la teoría </li>
-						<li> 4 proyectos dirigidos (capstones) para mostrarlos a futuros empleadores o clientes </li>
-						<li> 1 trabajo final con el objetivo de explorar los aspectos del curso que más te interesen</li>
-
+						<li> Proyectos dirigidos (capstones) para mostrarlos a futuros empleadores o clientes </li>
 					</ul>
 				</div>
 			</div>
@@ -222,9 +274,9 @@
 				<div class="col-md-offset-1 col-md-6">
 					<h3> Prepárate para uno de los trabajos más demandados </h3>
 					<ul>
-						<li> Según el <a href="https://www.ibm.com/analytics/us/en/technology/data-science/quant-crunch.html">reciente estudio de IBM</a>, para 2020, el 
+						<li> Según el <a href="https://www.ibm.com/analytics/us/en/technology/data-science/quant-crunch.html">reciente estudio de IBM</a>, para 2020, el
 						número de ofertas de trabajo se habrá incrementado un 15% (364000 nuevas ofertas de trabajo)</li>
-						<li> Tanto el perfil de Data Scientist como el de Data Engineers (a los que está orientado este curso) ocupan el primer y tercer puesto en el 
+						<li> Tanto el perfil de Data Scientist como el de Data Engineers (a los que está orientado este curso) ocupan el primer y tercer puesto en el
 							ranking de los mejores trabajos de America según <a href="https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm">la empresa Glassdoor</a></li>
 					</ul>
 				</div>
@@ -247,16 +299,16 @@
 		  <div class="panel panel-default module">
 		    <div class="panel-heading" role="tab">
 		      <h4 class="panel-title">
-			<a class="module-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				1. Introducción a la ciencia de datos. Herramientas básicas. 
+			      <a class="module-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				      1. Introducción a la ciencia de datos. Herramientas básicas.
 		        </a>
 		      </h4>
 		    </div>
 
 		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
-			      Objetivos: 
-			      <ul> 
+			      Objetivos:
+			      <ul>
 				      <li> Aprender en qué consiste la ciencia de datos y qué problemas trata de resolver </li>
 				      <li> Trabajo en entornos basados en Python y Docker</li>
 				      <li> Uso básico del paquete de herramientas científicas de Python: Numpy, Pandas, Matplotlib...</li>
@@ -269,14 +321,14 @@
 		    <div class="panel-heading" role="tab" id="headingTwo">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				2. Recolección, preparación y almacenamiento de datos.
+				      2. Recolección, preparación y almacenamiento de datos.
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
 			      Objetivos:
-			      <ul> 
+			      <ul>
 				      <li> Conocer y usar los formatos más comunes de datos </li>
 				      <li> Adquirir datos desde la web mediante scrapping y APIs</li>
 				      <li> Preprocesar y preparar datos para el análisis </li>
@@ -289,14 +341,14 @@
 		    <div class="panel-heading" role="tab" id="headingThree">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				3. Exploración y visualización de datos.
+				      3. Exploración y visualización de datos.
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 		      <div class="panel-body">
 			      Objetivos:
-			      <ul> 
+			      <ul>
 				      <li> Aprender en qué consisten las medidas de tendencia central, no central y dispersión </li>
 				      <li> Realizar análisis exploratorio de datos como medio de elaboración de hipótesis </li>
 				      <li> Visualizar datos con gráficos de tipo exploratorio usando seaborn </li>
@@ -306,34 +358,19 @@
 		    </div>
 		  </div>
 
-		  <div class="panel panel-default capstone">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
-				Capstone 1	
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-            Elaboración de un conjunto de datos a partir de fuentes heterogéneas. Exploración y visualización de los datos.
-		      </div>
-		    </div>
-		  </div>
-
-	<div class="panel panel-default module">
+	    <div class="panel panel-default module">
 		    <div class="panel-heading" role="tab" id="headingTwo">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
-				4. Fundamentos de Machine Learning.	
+				      4. Fundamentos de Machine Learning.
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
 			      Objetivos:
-			      <ul> 
-              <li> Estudiar el <i> machine learning </i> y sus casos de aplicación </li>
+			      <ul>
+              <li> Estudiar el <i>machine learning</i> y sus casos de aplicación </li>
 				      <li> Conocer las principales técnicas de evaluación y métodos de validación </li>
 				      <li> Introducir las características principales de los algoritmos de clasificación, regresión y clustering más utilizados </li>
 				      <li> Introducir scikit-learn, como herramienta para el uso y validación de algoritmos de machine learning</li>
@@ -342,190 +379,126 @@
 		    </div>
 		  </div>
 
-	<div class="panel panel-default module">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
-				5. Text mining, redes sociales y sistemas de recomendación. 
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-			      Objetivos:
-			      <ul> 
+      <div class="panel panel-default module">
+  	    <div class="panel-heading" role="tab" id="headingTwo">
+  	      <h4 class="panel-title">
+  	        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapseTwo">
+  			      5. Deep learning y aplicaciones.
+  	        </a>
+  	      </h4>
+  	    </div>
+  	    <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+  	      <div class="panel-body">
+  		      Objetivos:
+  		      <ul>
+  			      <li> Introducir las principales técnicas de Deep Learning </li>
+  			      <li> Uso de Deep Learning para análisis de imágenes </li>
+  			      <li> Uso de Tensorflow para la implementación de redes de Deep Learning </li>
+
+  		      </ul>
+  	      </div>
+  	    </div>
+  	  </div>
+
+      <div class="panel panel-default module">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
+              6. Text mining, redes sociales y sistemas de recomendación.
+            </a>
+          </h4>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            Objetivos:
+            <ul>
               <li> Conocer las principales técnicas de <i>machine learning</i> a partir de texto </li>
-				      <li> Análisis de información en grafos mediante NetworkX </li>
-				      <li> Comprender los principales algoritmos para la elaboración de recomendaciones de manera automática. </li>
-			      </ul>
+              <li> Análisis de información en grafos mediante NetworkX </li>
+              <li> Comprender los principales algoritmos para la elaboración de recomendaciones de manera automática </li>
+            </ul>
 
-		      </div>
-		    </div>
-		  </div>
+          </div>
+        </div>
+      </div>
 
-	<div class="panel panel-default capstone">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapseTwo">
-				Capstone 2	
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-            Construcción de un sistema de recomendación de libros. 
-		      </div>
-		    </div>
-		  </div>
-
-	<div class="panel panel-default module">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapseTwo">
-				6. Big Data I: Computación escalable.	
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-			      Objetivos:
-			      <ul> 
-				      <li> Introducir la problemática asociada a la computación escalable y el Big Data. </li>
-				      <li> Procesamiento de datos usando Spark </li>
-				      <li> Análisis de datos usando Spark SQL y MLlib. </li>
-			      </ul>
-		      </div>
-		    </div>
-		  </div>
-
-	<div class="panel panel-default module">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapseTwo">
-				7. Big Data II: Servicios en la nube.	
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-			      Objetivos:
-			      <ul> 
-				      <li> Introducción a la computación en la nube usando AWS. </li>
-				      <li> Conocer cómo hacer uso de la computación elástica. </li>
-				      <li> Principales APIs para almacenamiento de datos </li>
-				      <li> Lanzar clusters de Spark en la nube </li>
-			      </ul>
-		      </div>
-		    </div>
-		  </div>
-	<div class="panel panel-default module">
+      <div class="panel panel-default module">
 		    <div class="panel-heading" role="tab" id="headingTwo">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapseTwo">
-				8. Series temporales, detección de anomalías y flujos de datos. 
+				      7. Flujos de datos, series temporales y detección de anomalías.
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
 			      Objetivos:
-			      <ul> 
-				      <li> Aprender a analizar información temporal. </li>
-				      <li> Conocer las principales técnicas para la detección de anomalías. </li>
+			      <ul>
+				      <li> Aprender a analizar información temporal </li>
+				      <li> Conocer las principales técnicas para la detección de anomalías </li>
 				      <li> Comprender las principales técnicas para utilizar y analizar flujos de datos </li>
 			      </ul>
 		      </div>
 		    </div>
 		  </div>
 
-
-	<div class="panel panel-default capstone">
+      <div class="panel panel-default module">
 		    <div class="panel-heading" role="tab" id="headingTwo">
 		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapseTwo">
-				Capstone 3 
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapseTwo">
+				      8. Big Data I: Servicios en la nube.
 		        </a>
 		      </h4>
 		    </div>
-		    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-            Construcción de una plataforma de análisis de sentimiento sobre <i> tweets </i> en tiempo real. 
-		      </div>
-		    </div>
-		  </div>
-
-	<div class="panel panel-default module">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapseTwo">
-				9. Deep learning y aplicaciones.
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
 			      Objetivos:
-			      <ul> 
-				      <li> Introducir las principales técnicas de Deep Learning. </li>
-				      <li> Uso de Deep Learning para análisis de imágenes. </li>
-				      <li> Uso de Tensorflow para la implementación de redes de Deep Learning. </li>
-
+			      <ul>
+				      <li> Introducción a la computación en la nube usando AWS </li>
+				      <li> Conocer cómo hacer uso de la computación elástica </li>
+				      <li> Principales APIs para almacenamiento de datos </li>
+				      <li> Lanzar clusters de Spark en la nube </li>
 			      </ul>
 		      </div>
 		    </div>
 		  </div>
 
-	<div class="panel panel-default module">
+	    <div class="panel panel-default module">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapseTwo">
+				      9. Big Data II: Computación escalable.
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+			      Objetivos:
+			      <ul>
+				      <li> Introducir la problemática asociada a la computación escalable y el Big Data </li>
+				      <li> Procesamiento de datos usando Spark </li>
+				      <li> Análisis de datos usando Spark SQL y MLlib </li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+
+	    <div class="panel panel-default module">
 		    <div class="panel-heading" role="tab" id="headingTwo">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapseTwo">
-				10. Creación de servicios y apps basados en ciencia de datos. 
+				      10. Creación de servicios y apps basados en ciencia de datos.
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
-			      Objetivos: 
-				<ul> 
-				      <li> Conocer los conceptos básicos de la creación de servicios. </li>
-				      <li> Crear servicios mediante Flask. </li>
-				      <li> Introducir la computación serverless. </li>
-				      <li> Uso de APIs de Machine Learning. </li>
-
+			      Objetivos:
+				    <ul>
+				      <li> Conocer los conceptos básicos de la creación de servicios </li>
+				      <li> Crear servicios mediante Flask </li>
+				      <li> Introducir la computación serverless </li>
+				      <li> Uso de APIs de Machine Learning </li>
 			      </ul>
-		      
-
-		      </div>
-		    </div>
-		  </div>
-
-	<div class="panel panel-default capstone">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapseTwo">
-				Capstone 4	
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-Desarrollo de un API serverless que proporcione información de las imágenes recibidas, haciendo uso de un modelo de Deep Learning previamente entrenado.
-		      </div>
-		    </div>
-		  </div>
-
-	<div class="panel panel-default final">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <h4 class="panel-title">
-		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapseTwo">
-				Trabajo final	
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		      <div class="panel-body">
-			      Estamos últimando los detalles del trabajo final. Próximamente actualizaremos este apartado con más información.
-
 		      </div>
 		    </div>
 		  </div>
@@ -557,13 +530,41 @@ Desarrollo de un API serverless que proporcione información de las imágenes re
 			<div class="row">
 				<div class="col-md-offset-1 col-md-5">
 					<div class="colaborator">
-						<h5>José Antonio Gámez Martín	</h5>
+            <h5>Juan Ángel Aledo Sánchez</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
 				<div class="col-md-5">
 					<div class="colaborator">
-						<h5>Juan Ángel Aledo Sánchez	</h5>
+            <h5>Juan Ignacio Alonso Barba</h5>
+            <p>Servicios y Desarrollos Grupo Vermon</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+            <h5>María Teresa Alonso Martínez </h5>
+						<p>Universidad de Castilla-La Mancha</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+            <h5>Jacinto Arias Martínez  </h5>
+						<p>Demosense S.L.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-5">
+					<div class="colaborator">
+            <h5>Javier Cózar del Olmo </h5>
+						<p>Demosense S.L.</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="colaborator">
+            <h5>María Julia Flores Gallego</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
@@ -571,107 +572,79 @@ Desarrollo de un API serverless que proporcione información de las imágenes re
 			<div class="row">
 				<div class="col-md-offset-1 col-md-5">
 					<div class="colaborator">
-						<h5>Jose Miguel Puerta Callejón	</h5>
+            <h5>José Antonio Gámez Martín</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
 				<div class="col-md-5">
 					<div class="colaborator">
-						<h5>María Julia Flores Gallego </h5>
-						<p>Universidad de Castilla-La Mancha</p>
+            <h5>Daniel González Medina </h5>
+						<p>Demosense S.L.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-offset-1 col-md-5">
 					<div class="colaborator">
-						<h5>María Teresa Alonso Martínez </h5>
-						<p>Universidad de Castilla-La Mancha</p>
+            <h5>Enrique González Rodrigo </h5>
+						<p>Big Data for Business Solutions</p>
 					</div>
 				</div>
 				<div class="col-md-5">
 					<div class="colaborator">
-						<h5>Jacinto Arias Martínez  </h5>
-						<p>Universidad de Castilla-La Mancha</p>
+            <h5>Jesus Martínez Gómez</h5>
+            <p>Servicios y Desarrollos Grupo Vermon</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-offset-1 col-md-5">
 					<div class="colaborator">
-						<h5>Enrique González Rodrigo </h5>
+            <h5>Jose Miguel Puerta Callejón	</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
 				<div class="col-md-5">
 					<div class="colaborator">
-						<h5>Javier Cózar del Olmo </h5>
-						<p>Universidad de Castilla-La Mancha</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
-					<div class="colaborator">
-						<h5>Daniel González Medina </h5>
-						<p>Universidad de Castilla-La Mancha</p>
-					</div>
-				</div>
-				<div class="col-md-5">
-					<div class="colaborator">
-						<h5>Cristina Romero González </h5>
-						<p>Universidad de Castilla-La Mancha</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
-					<div class="colaborator">
-						<h5>Fernando Rubio Perona </h5>
-						<p>Universidad de Castilla-La Mancha</p>
-					</div>
-				</div>
-				<div class="col-md-5">
-					<div class="colaborator">
-							<h5>Juan Ignacio Alonso Barba</h5>
-							<p>Servicios y Desarrollos Grupo Vermon</p>
+            <h5>Cristina Romero González </h5>
+            <p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
 			<div class="row">
 				<div class="col-md-offset-3 col-md-6">
 					<div class="colaborator only-colaborator">
-							<h5>Jesus Martínez Gómez</h5>
-							<p>Servicios y Desarrollos Grupo Vermon</p>
+            <h5>Fernando Rubio Perona </h5>
+            <p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 </section>
-		
+
 <section id="inscripcion">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-offset-1 col-md-3 text-center inscripcion-item">
-				<h3 class="inscripcion-head"> Número limitado de plazas </h3>
-				<p class="inscripcion-content"> Nº de plazas: 25 </p>
-			</div> 
+				<h3 class="inscripcion-head">Número limitado de plazas</h3>
+				<p class="inscripcion-content">Nº de plazas: 25</p>
+			</div>
 			<div class="col-md-4 text-center inscripcion-item">
-				<h3 class="inscripcion-head"> Matrícula abierta</h3>
-				<p id="block-inscribete"> <a id="btn-inscribete" href="https://tp.uclm.es/preinscripcion.aspx?id=3929" target="_blank"> Inscríbete </a> </p>
+				<h3 class="inscripcion-head">Matrícula abierta</h3>
+				<p id="block-inscribete"> <a id="btn-inscribete" href="{{ page.url_inscripcion }}" target="_blank">Inscríbete</a> </p>
 				<p id="matricula-proxima">Es necesario un usuario de la UCLM. Si no lo tienes, puedes crear uno nuevo en la página de la inscripción</p>
 
-			</div> 
+			</div>
 			<div class="col-md-3 text-center inscripcion-item">
 				<h3 class="inscripcion-head"> Precio de matrícula </h3>
-				<p class="inscripcion-content"> 1600€* </p>
+				<p class="inscripcion-content">{{ page.precio }}€*</p>
 				<p id="matricula-proxima">*Bonificación del 30% a estudiantes y titulados del Master Universitario en Ingeniería Informática de la UCLM</p>
-			</div> 
+			</div>
 		</div>
-		<p id="pregunta"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;"> ¿Tienes alguna pregunta? </a> <p>
+		<p id="pregunta"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;">¿Tienes alguna pregunta?</a> <p>
 	</div>
 
-	
+
 </section>
 
 
@@ -681,68 +654,68 @@ Desarrollo de un API serverless que proporcione información de las imágenes re
 		<div class="row">
 			<div class="col-lg-2 col-lg-offset-2 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 footer-panel">
 				<div class="contacto">
-					<h3> Contacto </h3>
+					<h3>Contacto</h3>
 					<table>
-						<tr> 
-							<td> 
+						<tr>
+							<td>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x outer"></i>
-									<i class="fa fa-envelope fa-stack-1x inner"></i> 
+									<i class="fa fa-envelope fa-stack-1x inner"></i>
 								</span>
 							</td>
-							<td> 
+							<td>
 								<p class="mail"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;"> &#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;</a> </p>
 							</td>
 						</tr>
-						<tr> 
-							<td> 
+						<tr>
+							<td>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x outer"></i>
-									<i class="fa fa-phone fa-stack-1x inner"></i> 
+									<i class="fa fa-phone fa-stack-1x inner"></i>
 								</span>
 							</td>
-							<td> 
-								<p class="telefono"> 
-									967 59 92 00 (Ext. 2413) 
+							<td>
+								<p class="telefono">
+									967 59 92 00 (Ext. 2413)
 								</p>
 							</td>
 						</tr>
-						<tr> 
-							<td> 
+						<tr>
+							<td>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x outer"></i>
-									<i class="fa fa-info fa-stack-1x inner"></i> 
+									<i class="fa fa-info fa-stack-1x inner"></i>
 								</span>
 							</td>
-							<td> 
-								<p class="telefono"> 
-									<a href="http://www.ecdda-2.posgrado.uclm.es/" target="_blank"> Información oficial del curso </a>
+							<td>
+								<p class="telefono">
+									<a href="{{ page.url_oficial }}" target="_blank"> Información oficial del curso </a>
 								</p>
 							</td>
 						</tr>
 					</table>
 				</div>
-			</div> 
+			</div>
 			<div class="col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 footer-panel">
 				<div class="redes-sociales">
-					<h3> Síguenos </h3>
+					<h3>Síguenos</h3>
 					<table>
 						<tr>
 							<td>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x outer"></i>
-									<i class="fa fa-facebook fa-stack-1x inner"></i> 
+									<i class="fa fa-facebook fa-stack-1x inner"></i>
 								</span>
 							</td>
 							<td>
-								<p> <a href="https://www.facebook.com/ComputacionEsiiab">Facebook</a> </p> 
+								<p> <a href="https://www.facebook.com/ComputacionEsiiab">Facebook</a> </p>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x outer"></i>
-									<i class="fa fa-twitter fa-stack-1x inner"></i> 
+									<i class="fa fa-twitter fa-stack-1x inner"></i>
 								</span>
 							</td>
 							<td>
@@ -753,26 +726,26 @@ Desarrollo de un API serverless que proporcione información de las imágenes re
 							<td>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x outer"></i>
-									<i class="fa fa-google fa-stack-1x inner"></i> 
+									<i class="fa fa-google fa-stack-1x inner"></i>
 								</span>
 							</td>
 							<td>
-								<p> <a href="#" target="_blank">Google</a> </p> 
+								<p> <a href="#" target="_blank">Google</a> </p>
 							</td>
 						</tr>
 
 					</table>
 				</div>
-			</div> 
+			</div>
 			<div class="col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center footer-panel">
 				<div class="direccion">
-					<h3> Dirección </h3>
-					<p class="ldireccion"> Escuela Superior de Ingeniería Informática de Albacete </p>
-					<p class="ldireccion"> Edificio Infante Don Juan Manuel </p>
-					<p class="ldireccion"> Avda. de España s/n </p>
-					<p class="ldireccion"> 02071 Albacete </p> 
+					<h3>Dirección</h3>
+					<p class="ldireccion">Escuela Superior de Ingeniería Informática de Albacete</p>
+					<p class="ldireccion">Edificio Infante Don Juan Manuel</p>
+					<p class="ldireccion">Avda. de España s/n</p>
+					<p class="ldireccion">02071 Albacete</p>
 				</div>
-			</div> 
+			</div>
 		</div>
 	</div>
 </footer>

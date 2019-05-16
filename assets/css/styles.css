@@ -1,6 +1,6 @@
-/* 
+/*
 /* RGB */
-$color1: rgba(62, 90, 109, 1); #3e5a6d Dark Blue 
+$color1: rgba(62, 90, 109, 1); #3e5a6d Dark Blue
 $color2: rgba(182, 216, 234, 1); #b6d8ea Light Blue
 $color3: rgba(131, 172, 192, 1); #83acc0 Medium blue
 $color4: rgba(180, 191, 198, 1); #b4bfc6 Gray
@@ -39,7 +39,7 @@ a{
 
 
 /*----------------
-	Nav 	
+	Nav
 ----------------*/
 
 header {
@@ -102,7 +102,7 @@ header {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: rgba(34, 34, 34, 1); 
+  background-color: rgba(34, 34, 34, 1);
 }
 
 .navbar-default .navbar-collapse,
@@ -145,9 +145,10 @@ header {
 
 .hero {
 	position: relative;
-	height: 64vh;
+	/*height: 64vh;*/
 	color: #fff;
 	padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #bannerimage {
@@ -225,12 +226,12 @@ header {
 	padding: 20px 46px;
 }
 
-@media (max-width: 992px){
+/*@media (max-width: 992px){
 
 	.hero {
 		min-height: 700px;
 	}
-}
+}*/
 
 @media (max-width: 768px){
 
@@ -241,7 +242,7 @@ header {
 
 
 /*--------------------
-	Important Info	
+	Important Info
 ---------------------*/
 
 #important-info {
@@ -273,75 +274,75 @@ header {
 }
 
 #modalidad-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 30px;
 	margin-top: 20px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #duracion-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 30px;
 	margin-top: 20px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #meses-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 16px;
 	margin-top: 1px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
-			
+
 #pinscripcion-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 20px;
 	margin-top: 10px;
 	margin-bottom: 0px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #parinscripcion-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 14px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #pmatricula-portada-prev {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 16px;
 	margin-top: 1px;
 	margin-bottom: 0px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 
 #pmatricula-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 0px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #preinscripcion-fin {
-	color: rgba(227, 53, 53, 1); 
+	color: rgba(227, 53, 53, 1);
 	font-weight: 700;
 }
 
 #parmatricula-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 20px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
-					
+
 
 .item-orientacion-portada {
-	color: rgba(34, 34, 34, 1); 
+	color: rgba(34, 34, 34, 1);
 	font-size: 18px;
-	font-family: 'Barlow Condensed', sans-serif; 
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 .instituciones {
@@ -352,7 +353,7 @@ header {
 	height: 10vh;
 	width: 100%;
 	white-space: nowrap;
-	text-align: center; 
+	text-align: center;
 	margin: 1em 0;
 }
 
@@ -381,22 +382,22 @@ header {
 .institucion .logo {
 	display: inline-block;
 	max-width: 100%;
-	max-height: 100%; 
+	max-height: 100%;
 	vertical-align: middle;
 }
 
 .institucion .logo-width {
 	display: inline-block;
 	max-width: 100%;
-	max-height: 100%; 
+	max-height: 100%;
 	vertical-align: middle;
 }
 
 @media (max-width: 768px){
 
-	.hero {
+	/*.hero {
 		min-height: 700px;
-	}
+	}*/
 
 	#important-info {
 		min-height: 700px;
@@ -567,7 +568,7 @@ header {
 
 
 /*--------------------
-	Content	
+	Content
 ---------------------*/
 
 
@@ -581,8 +582,8 @@ header {
 	text-align: center;
 	font-size: 50px;
 	margin-bottom: 30px;
-	font-family: 'Barlow Condensed', sans-serif; 
-	color: rgba(34, 34, 34, 1); 
+	font-family: 'Barlow Condensed', sans-serif;
+	color: rgba(34, 34, 34, 1);
 }
 
 #content .module .panel-heading {
@@ -601,7 +602,7 @@ header {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
- 
+
 
 #content .capstone .panel-heading a {
 	color: #b4bfc6;
@@ -609,7 +610,7 @@ header {
 
 #content .capstone .panel-heading {
 	text-align: center;
-	background-color: #3e5a6d; 
+	background-color: #3e5a6d;
 }
 
 #content .final {
@@ -628,7 +629,7 @@ header {
 
 
 /*--------------------
-	Colaboradores 	
+	Colaboradores
 ---------------------*/
 #colaboradores {
 	position: relative;
@@ -687,7 +688,7 @@ header {
 
 .colaborator {
 	margin: 20px 0;
-	border: 1px solid white; 
+	border: 1px solid white;
 	background-color: rgba(34, 34, 34, 0.75);
 }
 .colaborator h5{
@@ -703,13 +704,13 @@ header {
 
 
 /*----------------------
- 	Inscripcion	
+ 	Inscripcion
 ----------------------*/
 
 #inscripcion {
 	margin-top: 60px;
 	padding-top: 60px;
-	margin-bottom: 60px; 
+	margin-bottom: 60px;
 }
 
 .inscripcion-item {
@@ -856,4 +857,3 @@ footer .ldireccion {
 	margin: 15px;
 
 }
-
