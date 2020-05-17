@@ -1,14 +1,16 @@
-/*
+---
+---
+
 /* RGB */
-$color1: rgba(62, 90, 109, 1); #3e5a6d Dark Blue
-$color2: rgba(182, 216, 234, 1); #b6d8ea Light Blue
-$color3: rgba(131, 172, 192, 1); #83acc0 Medium blue
-$color4: rgba(180, 191, 198, 1); #b4bfc6 Gray
-$color5: rgba(34, 34, 34, 1); #222222 Blackish
- */
-/*-------------
- 	General
--------------*/
+
+$color1: rgba(62, 90, 109, 1);    //#3e5a6d Dark Blue
+$color2: rgba(182, 216, 234, 1);  //#b6d8ea Light Blue
+$color3: rgba(131, 172, 192, 1);  //#83acc0 Medium blue
+$color4: rgba(180, 191, 198, 1);  //#b4bfc6 Gray
+$color5: rgba(34, 34, 34, 1);     //#222222 Blackish
+
+
+/* General */
 
 * {
 	margin: 0;
@@ -34,7 +36,7 @@ a{
     border: 0;
     height: 2px;
     width: 80%;
-    background-image: linear-gradient(to right, rgba(182, 216, 234, 0), rgba(182, 216, 234, 1), rgba(182, 216, 234, 0));
+    background-image: linear-gradient(to right, rgba(182, 216, 234, 0), $color2, rgba(182, 216, 234, 0));
 }
 
 
@@ -55,7 +57,7 @@ header {
 }
 
 .navbar-default .navbar-brand {
-  color: rgba(180, 191, 198, 1);
+  color: $color4;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -64,11 +66,11 @@ header {
 }
 
 .navbar-default .navbar-text {
-  color: rgba(180, 191, 198, 1);
+  color: $color4;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: rgba(180, 191, 198, 1);
+  color: $color4;
   font-size: 16px;
   margin-right: 20px;
   transition: color 300ms ease;
@@ -82,32 +84,32 @@ header {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: rgba(180, 191, 198, 1);
+  color: $color4;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: rgba(180, 191, 198, 1);
+  color: $color4;
 }
 
 .navbar-default .navbar-toggle {
-  color: rgba(131, 172, 192, 1);
+  color: $color3;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: rgba(131, 172, 192, 1);
+  background-color: $color3;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: rgba(34, 34, 34, 1);
+  background-color: $color5;
 }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: rgba(34, 34, 34, 1);
+  border-color: $color5;
 }
 
 .navbar-default .navbar-link {
@@ -116,20 +118,20 @@ header {
 
 .navbar-default .navbar-link:hover {
   color: #ffbbbc;
-  background-color: rgba(34, 34, 34, 1);
+  background-color: $color5;
   opacity: 0.90;
 }
 
 @media (max-width: 767px) {
 	.navbar-collapse {
-		background-color: rgba(34, 34, 34, 1);
+		background-color: $color5;
 		text-align: center;
 	}
 }
 
 
 .navbar-fixed-top.scrolled {
-  background-color: rgba(62, 90, 109, 1);
+  background-color: $color1;
   transition: background-color 200ms linear;
 }
 
@@ -176,7 +178,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(62, 90, 109, 1);
+	background-color: $color1;
 	opacity: 0.75;
 }
 
@@ -188,7 +190,7 @@ header {
 .hero .bannertext .edition {
 	margin-bottom: auto;
 	display: inline-block;
-	background-color: rgba(34, 34, 34, 1);
+	background-color: $color5;
 	border-radius: 50px;
 }
 
@@ -197,7 +199,7 @@ header {
 	font-family: 'Barlow Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 25px;
-	color: rgba(180, 191, 198, 1);
+	color: $color4;
 	padding: 10px 25px 8px 25px;
 }
 
@@ -255,7 +257,7 @@ header {
 }
 
 .important-item h3 {
-    color: rgba(62, 90, 109, 1);
+    color: $color1;
     font-family: Pacifico, cursive;
     font-size: 30px;
 }
@@ -270,32 +272,34 @@ header {
     border: 0;
     height: 2px;
     width: 60%;
-    background-image: linear-gradient(to right, rgba(182, 216, 234, 0), rgba(182, 216, 234, 1), rgba(182, 216, 234, 0));
+    background-image: linear-gradient(to right, rgba(182, 216, 234, 0), $color2, rgba(182, 216, 234, 0));
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #modalidad-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 30px;
 	margin-top: 20px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #duracion-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 30px;
 	margin-top: 20px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #meses-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 16px;
 	margin-top: 1px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #pinscripcion-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 20px;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -303,13 +307,13 @@ header {
 }
 
 #parinscripcion-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 14px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #pmatricula-portada-prev {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 16px;
 	margin-top: 1px;
 	margin-bottom: 0px;
@@ -318,7 +322,7 @@ header {
 
 
 #pmatricula-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 0px;
@@ -331,7 +335,7 @@ header {
 }
 
 #parmatricula-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 20px;
 	margin-top: 1px;
 	margin-bottom: 1px;
@@ -340,7 +344,7 @@ header {
 
 
 .item-orientacion-portada {
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 	font-size: 18px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
@@ -451,7 +455,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(62, 90, 109, 1);
+	background-color: $color1;
 	opacity: 0.75;
 }
 
@@ -464,7 +468,7 @@ header {
 #metodologia  .bannertext .edition {
 	margin-bottom: auto;
 	display: inline-block;
-	background-color: rgba(34, 34, 34, 1);
+	background-color: $color5;
 	border-radius: 50px;
 }
 
@@ -534,7 +538,7 @@ header {
 
 #metodologia a {
   transition: color 300ms ease;
-  color: rgba(180, 191, 198, 1);
+  color: $color4;
 }
 
 #metodologia a:hover {
@@ -583,7 +587,7 @@ header {
 	font-size: 50px;
 	margin-bottom: 30px;
 	font-family: 'Barlow Condensed', sans-serif;
-	color: rgba(34, 34, 34, 1);
+	color: $color5;
 }
 
 #content .module .panel-heading {
@@ -648,7 +652,7 @@ header {
 #colaboradores h2 {
 	padding: 20px 10px 20px 10px;
 	display: inline-block;
-	background-color: rgba(34, 34, 34, 1);
+	background-color: $color5;
 	border-radius: 50px;
 }
 
@@ -677,7 +681,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(62, 90, 109, 1);
+	background-color: $color1;
 	opacity: 0.75;
 }
 
@@ -719,7 +723,7 @@ header {
 
 #pregunta {
 	text-align: center;
-	color: rgba(62, 90, 109, 1);
+	color: $color1;
 	margin-top: 50px;
     	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 20px;
@@ -727,7 +731,7 @@ header {
 }
 
 .inscripcion-head {
-    color: rgba(62, 90, 109, 1);
+    color: $color1;
     font-family: Pacifico, cursive;
     font-size: 30px;
 }
