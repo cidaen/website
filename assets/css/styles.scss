@@ -8,6 +8,8 @@ $color2: rgba(182, 216, 234, 1);  //#b6d8ea Light Blue
 $color3: rgba(131, 172, 192, 1);  //#83acc0 Medium blue
 $color4: rgba(180, 191, 198, 1);  //#b4bfc6 Gray
 $color5: rgba(34, 34, 34, 1);     //#222222 Blackish
+$color6: rgba(200, 211, 218, 1);	//#d2dde4 White
+//$color6: rgba(180, 191, 198, 1);	//#b4bfc6
 
 
 /* General */
@@ -354,11 +356,19 @@ header {
 }
 
 .institucion {
-	height: 10vh;
 	width: 100%;
+	max-width: 20vh;
 	white-space: nowrap;
 	text-align: center;
 	margin: 1em 0;
+}
+
+.organizan .institucion {
+	height: 10vh;
+}
+
+.colaboran .institucion {
+	height: 7vh;
 }
 
 .helper {
@@ -422,8 +432,8 @@ header {
 	height: auto;
 	min-height: 100vh;
 	color: #fff;
-	padding-top: 100px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .clear {
@@ -508,7 +518,7 @@ header {
 	font-size: 25px;
 	font-weight: 500;
 	margin-bottom: 10px;
-	color: #b4bfc6;
+	color: $color6;
 	text-align: left;
 }
 
@@ -517,7 +527,7 @@ header {
 	font-size: 16px;
 	font-weight: 500;
 	margin-bottom: 10px;
-	color: #b4bfc6;
+	color: $color6;
 	text-align: center;
 }
 
@@ -532,9 +542,11 @@ header {
 }
 */
 
+/*
 #metodologia .modalidad-curso {
 	margin-top: 30px;
 }
+*/
 
 #metodologia a {
   transition: color 300ms ease;
@@ -552,11 +564,11 @@ header {
 	margin-top: 15px;
 	font-style: italic;
 	font-weight: 400;
-	color: #b4bfc6;
+	color: $color6;
 }
 
 #metodologia .practico-curso {
-	margin-top: 80px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
@@ -566,7 +578,7 @@ header {
 	margin-top: 15px;
 	font-style: italic;
 	font-weight: 400;
-	color: #b4bfc6;
+	color: $color6;
 }
 
 
@@ -860,4 +872,21 @@ footer .ldireccion {
 	font-size: 16px;
 	margin: 15px;
 
+}
+
+ul {
+	list-style-position: inside;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+	align-items: center;
+  padding: 10px;
+}
+
+/* to center flex-items */
+.flex-item {
+   margin: auto 1.5em;
 }
