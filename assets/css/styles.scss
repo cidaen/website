@@ -633,9 +633,9 @@ header {
 
 
 /*--------------------
-	Colaboradores
+	Profesores
 ---------------------*/
-#colaboradores {
+#profesores {
 	position: relative;
 	height: auto;
 	min-height: 100vh;
@@ -645,18 +645,18 @@ header {
 	padding-bottom: 30px;
 }
 
-#colaboradores h1{
+#profesores h1{
 	margin-bottom: 50px;
 }
 
-#colaboradores h2 {
+#profesores h2 {
 	padding: 20px 10px 20px 10px;
 	display: inline-block;
 	background-color: $color5;
 	border-radius: 50px;
 }
 
-#colaboradoresimage {
+#profesoresimage {
 	background-image: url(../img/colaboradores.jpg);
 	width: 100%;
 	height: 100%;
@@ -664,7 +664,7 @@ header {
 	filter: grayscale(40%);
 }
 
-#colaboradores .background-image{
+#profesores .background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -674,7 +674,7 @@ header {
 	z-index: -1;
 }
 
-#colaboradores .background-image:after{
+#profesores .background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -685,7 +685,7 @@ header {
 	opacity: 0.75;
 }
 
-#colaboradores > h1,h2 {
+#profesores > h1,h2 {
 	color: #b4bfc6; /*#83acc0;*/
 	text-align: center;
 }
