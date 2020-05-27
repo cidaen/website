@@ -1,5 +1,5 @@
 ---
-title: CIDAEN
+title: CiDAEN
 subtitle: Ciencia de Datos e Ingeniería de Datos en la Nube
 url: "http://www.cidaen.es/"
 edicion: 1
@@ -62,7 +62,7 @@ precio: 2400
           <ul class="nav navbar-nav navbar-right">
 		  <!--<li><a href="#">Home</a></li>-->
             <li><a href="#metodologia">Metodología</a></li>
-            <li><a href="#content-view">Contenido</a></li>
+            <li><a href="#content-view">Programa</a></li>
             <li><a href="#profesores">Profesores</a></li>
             <li><a href="#inscripcion">Inscripción</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -80,14 +80,14 @@ precio: 2400
 
 	<div class="bannertext">
 		<div class="edition">
-			<h2>Máster - {{ page.edicion }}ª Edición </h2>
+			<h2>Máster online - {{ page.edicion }}ª Edición </h2>
 		</div>
 		<h1>{{ page.subtitle }}</h1>
+
 		<h3>Universidad de Castilla-La Mancha</h3>
-		<h3>60 créditos</h3>
-		<div class="uclmlogo">
+	<div class="uclmlogo">
 			<a href="{{ page.url_oficial }}" target="_blank">
-				<img alt="UCLM" src="assets/img/UCLM_CEI_Color.png">
+				<img alt="UCLM" src="assets/img/UCLM_Color.png">
 			</a>
 		</div>
 	</div>
@@ -107,8 +107,9 @@ precio: 2400
 			<div id="item-duracion" class="important-item">
 				<h3> Duración </h3>
 				<hr class="item-hr">
-				<p id="duracion-portada">{{ page.duracion }}</p>
-				<p id="meses-portada"><b>({{ page.curso_ini }}-{{ page.curso_fin }}) </b></p>
+				<p id="duracion-portada">60 Créditos</p>
+				<!--<p id="meses-portada"><b>{{ page.duracion }}</b></p> -->
+				<p id="meses-portada">({{ page.curso_ini }}-{{ page.curso_fin }}) </p>
 
 			</div>
 		</div>
@@ -130,7 +131,6 @@ precio: 2400
 				<hr class="item-hr">
 				<p class="item-orientacion-portada"> Titulados universitarios </p>
 				<p class="item-orientacion-portada"> Estudiantes de último curso de grado</p>
-				<p class="item-orientacion-portada"> Titulados de ciclos formativos de grado superior </p>
 			</div>
 		</div>
 	</div>
@@ -199,16 +199,16 @@ precio: 2400
 		<div class="col-sm-12 col-md-2 col-lg-1">
 			<div class="institucion">
         <span class="helper"></span>
-        <a href="https://demosense.com" target="_blank">
-				<img alt="DemoSense" class="logo" src="assets/img/demosense.jpg">
+        <a href="https://taidy.cloud/es/" target="_blank">
+				<img alt="Taidy" class="logo" src="assets/img/taidy.png">
 				</a>
 			</div>
 		</div>
     <div class="col-sm-12 col-md-2 col-lg-1">
 			<div class="institucion">
         <span class="helper"></span>
-        <a href="https://www.advantic.es/" target="_blank">
-				<img alt="Advantic" class="logo" src="assets/img/advantic.png">
+        <a href="https://www.netberry.es/" target="_blank">
+				<img alt="Netberry" class="logo" src="assets/img/netberry.png">
 				</a>
 			</div>
 		</div>
@@ -284,7 +284,7 @@ precio: 2400
 	<div class="background-image">
 		<div id="contentimage"> </div>
 	</div>
-		<h1> Contenido </h1>
+		<h1> <b>Programa</b></h1>
 		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 		  <div class="panel panel-default module">
@@ -298,11 +298,11 @@ precio: 2400
 
 		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
-			      <h5>Objetivos</h5>
+			      <h5>Contenido</h5>
 			      <ul>
-				      <li> Aprender en qué consiste la ciencia de datos y qué problemas trata de resolver </li>
-				      <li> Trabajo en entornos basados en Python y Docker</li>
-				      <li> Uso básico del paquete de herramientas científicas de Python: Numpy, Pandas, Matplotlib...</li>
+				      <li> Presentación. Introducción a la ciencia de datos y a la ingeniería de datos. </li>
+				      <li> Herramientas de trabajo básicas: <i>Docker</i>, <i>Python</i> y <i>Jupiter Notebook</i>.</li>
+				      <li> Introducción a la manipulación de datos con <i>Pandas</i>. </li>
 			      </ul>
 		      </div>
 		    </div>
@@ -318,7 +318,12 @@ precio: 2400
 		    </div>
 		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
-			      <strong>Objetivos</strong>
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> Datos estructurados y no estructurados. </li>
+				      <li> Bases de datos SQL y NoSQL. </li>
+				      <li> Adquisición de datos de fuentes heterogéneas: APIs, web, etc.  </li>
+			      </ul>
 		      </div>
 		    </div>
 		  </div>
@@ -333,7 +338,12 @@ precio: 2400
 		    </div>
 		    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 		      <div class="panel-body">
-			      <strong>Objetivos</strong>
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> Visualización de datos con <i>Matplotlib/Seaborn</i> </li>
+				      <li> Preprocesamiento y preparación de datos </li>
+				      <li> Análisis exploratorio de datos con <i>Statsmodels</i>  </li>
+			      </ul>
 		      </div>
 		    </div>
 		  </div>
@@ -347,8 +357,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
+			<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> Introducción al aprendizaje automático. <i>scikit-learn</i>. </li>
+				      <li> Modelos de aprendizaje supervisado y no supervisado. </li>
+				      <li> Evaluación y validación de modelos. </li>
+			      </ul>
 		      </div>
 		    </div>
 		  </div>
@@ -362,9 +377,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> Modelos avanzados de aprendizaje automático. </li>
+				      <li> Tratamiento de casos específicos.  </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -377,9 +396,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -392,9 +415,15 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> Visualización, análisis y modelos predictivos en series temporales. </li>
+				      <li> Análisis de flujos de datos. Modelos predictivos y evaluación. </li>
+				      <li> Algoritmos detección de anomalías. Detección sobre series temporales y flujos.</li>
+
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -407,9 +436,14 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> Aprendizaje automático sobre información textual. <i>NLTK</i> y <i>Spicy</i> </li>
+				      <li> Análisis de redes. <i>NetworkX</i> </li>
+				      <li> Sistemas de recomendación. </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -422,9 +456,14 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+			      	  <li> Principios de visualización. </li>
+				      <li> Herramientas avanzadas de visualización. </li>
+				      <li> Diseño e implementación de paneles de control. </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -437,9 +476,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -452,9 +495,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -467,9 +514,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -482,9 +533,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 
@@ -497,8 +552,14 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>		      <div class="panel-body">
+			      <strong>Contenido</strong>
 		      </div>
 		    </div>
 		  </div>
@@ -513,9 +574,13 @@ precio: 2400
 		      </h4>
 		    </div>
 		    <div id="collapseFiveteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveteen">
-		      <div class="panel-body">
-			      <strong>Objetivos</strong>
-		      </div>
+				<div class="panel-body">
+			      <h5>Contenido</h5>
+			      <ul>
+				      <li> -- </li>
+				      <li> -- </li>
+			      </ul>
+		        </div>
 		    </div>
 		  </div>
 		</div>
@@ -675,7 +740,7 @@ precio: 2400
 			<div class="col-md-3 text-center inscripcion-item">
 				<h3 class="inscripcion-head"> Precio de matrícula </h3>
 				<p class="inscripcion-content">{{ page.precio }}€*</p>
-				<p id="matricula-proxima">*Bonificación del 30% a estudiantes y titulados del Master Universitario en Ingeniería Informática de la UCLM, y del Curso de Especialista en Ciencia de Datos y Desarrollo de Aplicaciones Escalables en la Nube</p>
+				<p id="matricula-proxima">*Bonificación del 25% a estudiantes y titulados del Master Universitario en Ingeniería Informática de la UCLM, y del Curso de Especialista en Ciencia de Datos y Desarrollo de Aplicaciones Escalables en la Nube</p>
 			</div>
 		</div>
 		<p id="pregunta"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;">¿Tienes alguna pregunta?</a> <p>
