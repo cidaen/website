@@ -288,15 +288,25 @@ header {
 
 #duracion-portada {
 	color: $color5;
-	font-size: 30px;
-	margin-top: 20px;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 0px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #meses-portada {
 	color: $color5;
-	font-size: 16px;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+#creditos-portada {
+	color: $color5;
+	font-size: 20px;
 	margin-top: 1px;
+	margin-bottom: 1px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -347,7 +357,17 @@ header {
 
 .item-orientacion-portada {
 	color: $color5;
-	font-size: 18px;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+.item-orientacion-portada-l {
+	color: $color5;
+	font-size: 20px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
