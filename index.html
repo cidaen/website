@@ -8,9 +8,9 @@ url_inscripcion: "https://preinscripciontp.apps.uclm.es"
 preinscripcion_ini: "01/05/2022"
 preinscripcion_fin: "22/09/2022"
 matricula_ini: "25/09/2022"
-matricula_fin: "09/10/2021"
-curso_ini: "03/10/2021"
-curso_fin: "30/06/2022"
+matricula_fin: "09/10/2022"
+curso_ini: "octubre 2022"
+curso_fin: "junio 2023"
 duracion: "9 meses"
 precio: 2520
 ---
@@ -29,17 +29,18 @@ precio: 2520
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="400">
     <meta property="og:image:height" content="400">
-    <link rel="canonical" href="http://www.cidaen.es/" />
+    <link rel="canonical" href="http://www.cidaen.es/"/>
     <title>{{ page.title }} | {{ page.subtitle }}</title>
     <script
   	src="https://code.jquery.com/jquery-3.2.1.min.js"
   	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   	crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700|Pacifico|Roboto:400i,500,500i" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="icon" href="assets/img/icon.png">
     <script src="assets/js/scroll-effect.js"></script>
 </head>
 
@@ -55,7 +56,9 @@ precio: 2520
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ site.url }}">{{ page.title }}</a> <!-- Change to logo -->
+          <a class="navbar-brand" href="#">
+			  <img src="assets/img/logomarca_uclm.png" height="30">
+		  </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,16 +83,14 @@ precio: 2520
 	</div>
 
 	<div class="bannertext">
-		<div class="edition">
-			<h2>Máster - {{ page.edicion }}ª Edición </h2>
+		<div class="cidaenlogo">
+			<a href="{{ page.url_oficial }}" target="_blank">
+				<img src="assets/img/cidaen.png">
+			</a>
 		</div>
 		<h1>{{ page.subtitle }}</h1>
-
-		<h3>Universidad de Castilla-La Mancha</h3>
-	<div class="uclmlogo">
-			<a href="{{ page.url_oficial }}" target="_blank">
-				<img alt="UCLM" src="assets/img/UCLM_Color.png">
-			</a>
+		<div class="edition">
+			<h2>Máster UCLM - {{ page.edicion }}ª Edición</h2>
 		</div>
 	</div>
 </section>
@@ -99,39 +100,33 @@ precio: 2520
 		<div class="col-lg-offset-2 col-lg-2 col-md-3 col-sm-12">
 			<div id="item-modalidad" class="important-item">
 				<h3>Modalidad</h3>
-				<hr class="item-hr">
 				<p id="modalidad-portada">Online</p>
 				<!--p id="meses-portada">(Opción semipresencial)</p-->
 			</div>
 		</div>
 		<div class="col-lg-2 col-md-3 col-sm-12">
 			<div id="item-duracion" class="important-item">
-				<h3> Duración </h3>
-				<hr class="item-hr">
+				<h3>Duración</h3>
 				<p id="duracion-portada"><b>{{ page.duracion }}</b></p>
-				<p id="meses-portada">({{ page.curso_ini }}-{{ page.curso_fin }}) </p>
+				<p id="meses-portada">{{ page.curso_ini }} a {{ page.curso_fin }}</p>
 				<p id="creditos-portada"><b>60 Créditos</b></p>
 			</div>
 		</div>
 		<div class="col-lg-2 col-md-3 col-sm-12">
 			<div id="item-inscripcion" class="important-item">
-				<h3> Inscripción </h3>
-				<hr class="item-hr">
+				<h3>Plazos</h3>
         <!--<p id="pmatricula-portada-prev"><strike> 20/11/17-11/01/18 </strike></p>-->
-        <p id="pmatricula-portada"> <b>Preinscripción</b> </p>
-        <p id="pmatricula-portada">{{ page.preinscripcion_ini }}-<span id="preinscripcion-fin">{{ page.preinscripcion_fin }}</span></p>
+        <p id="pmatricula-portada"> <b>Preinscripción</b></p>
+        <p id="pmatricula-meses-portada">{{ page.preinscripcion_ini }} al <span id="preinscripcion-fin">{{ page.preinscripcion_fin }}</span></p>
         <p id="parmatricula-portada"><b>Plazo de matrícula</b></p>
-        <p id="parmatricula-portada">{{ page.matricula_ini }}-{{ page.matricula_fin }} </p>
+        <p id="parmatricula-meses-portada">{{ page.matricula_ini }} al {{ page.matricula_fin }}</p>
 
 			</div>
 		</div>
 		<div class="col-lg-2 col-md-3 col-sm-12">
 			<div id="item-orientacion" class="important-item">
-				<h3> Orientación </h3>
-				<hr class="item-hr">
+				<h3>Orientación</h3>
 				<p class="item-orientacion-portada"> Titulados universitarios</p>
-				<p class="item-orientacion-portada"> Profesionales</p>
-				<p class="item-orientacion-portada"> Estudiantes de último curso de grado</p>
 			</div>
 		</div>
 	</div>
@@ -142,7 +137,6 @@ precio: 2520
     <div class="col-lg-offset-5 col-lg-2 col-md-offset-4 col-md-4 col-sm-12">
 			<div class="important-item">
 				<h3>Colaboran</h3>
-        <hr class="item-hr">
 			</div>
 		</div>
   </div>
@@ -175,36 +169,8 @@ precio: 2520
       <div class="flex-item">
   			<div class="institucion">
           <span class="helper"></span>
-          <a href="https://www.netberry.es/" target="_blank">
-  				<img alt="Netberry" class="logo" src="assets/img/netberry.png">
-  				</a>
-  			</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="flex-container colaboran">
-      <div class="flex-item">
-  			<div class="institucion">
-          <span class="helper"></span>
-          <a href="https://www.futurespace.es/" target="_blank">
-  				<img alt="FutureSpace" class="logo" src="assets/img/futurespace.png">
-  				</a>
-  			</div>
-      </div>
-      <div class="flex-item">
-  			<div class="institucion">
-          <span class="helper"></span>
           <a href="https://www.mifarma.es/" target="_blank">
   				<img alt="MiFarma" class="logo" src="assets/img/mifarma.png">
-  				</a>
-  			</div>
-      </div>
-      <div class="flex-item">
-  			<div class="institucion">
-          <span class="helper"></span>
-          <a href="https://www.ingeteam.com/" target="_blank">
-  				<img alt="Ingeteam" class="logo" src="assets/img/ingeteam.jpg">
   				</a>
   			</div>
       </div>
@@ -232,7 +198,7 @@ precio: 2520
 				<div class="col-md-offset-1 col-md-6">
 					<h3> Sin necesidad de abandonar tu trabajo </h3>
 					<ul>
-						<li> Clases en streaming y en formato webinar </li>
+						<li> Clases en <i>streaming</i> y en formato <i>webinar</i> </li>
 						<li> Programación orientada a la flexibilidad horaria</li>
 						<li> Uso de las últimas tecnologías para la comunicación continua entre alumnos y profesores </li>
 					</ul>
@@ -262,11 +228,9 @@ precio: 2520
 				</div>
 			</div>
 		</div>
-
 	</div>
 	<div class="clear"> </div>
 </section>
-
 
 <section id="content-view">
 	<div id="content" class="container">
@@ -280,17 +244,16 @@ precio: 2520
 		    <div class="panel-heading" role="tab">
 		      <h4 class="panel-title">
 			      <a class="module-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				      1. Introducción a la ciencia de datos. Herramientas básicas.
+				      1. Introducción a la ciencia de datos. Herramientas básicas
 		        </a>
 		      </h4>
 		    </div>
 
 		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Presentación. Introducción a la ciencia de datos y a la ingeniería de datos. </li>
-				      <li> Herramientas de trabajo básicas: <i>Docker</i>, <i>Python</i> y <i>Jupiter Notebook</i>.</li>
+				      <li> Herramientas de trabajo básicas: <i>Docker</i>, <i>Python</i> y <i>Jupyter Notebook</i>.</li>
 				      <li> Introducción a la manipulación de datos con <i>Pandas</i>. </li>
 			      </ul>
 		      </div>
@@ -301,13 +264,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingTwo">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				      2. Recolección, preparación y almacenamiento de datos.
+				      2. Recolección, preparación y almacenamiento de datos
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		      <div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Datos estructurados y no estructurados. </li>
 				      <li> Bases de datos SQL y NoSQL. </li>
@@ -321,13 +283,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingThree">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				      3. Análisis exploratorio de datos.
+				      3. Análisis exploratorio de datos
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 		      <div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Visualización de datos con <i>Matplotlib/Seaborn</i> </li>
 				      <li> Preprocesamiento y preparación de datos </li>
@@ -341,13 +302,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingFour">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-				      4. Fundamentos de <i>Machine Learning</i>.
+				      4. Fundamentos de <i>Machine Learning</i>
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 			<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Introducción al aprendizaje automático. <i>scikit-learn</i>. </li>
 				      <li> Modelos de aprendizaje supervisado y no supervisado. </li>
@@ -361,13 +321,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingFive">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-				      5. Técnicas avanzadas de <i>Machine Learning</i>.
+				      5. Técnicas avanzadas de <i>Machine Learning</i>
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Modelos avanzados de aprendizaje automático. </li>
 				      <li> Tratamiento de casos específicos.  </li>
@@ -380,13 +339,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingSix">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-				      6. <i>Deep Learning</i>.
+				      6. <i>Deep Learning</i>
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Introducción al Deep Learning. </li>
 				      <li> Desarrollo de redes neuronales feed-forward y convolucionales. </li>
@@ -400,18 +358,14 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingSeven">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-				      7. Flujos, series temporales y detección de anomalías.
+				      7. Series temporales
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Visualización, análisis y modelos predictivos en series temporales. </li>
-				      <li> Análisis de flujos de datos. Modelos predictivos y evaluación. </li>
-				      <li> Algoritmos detección de anomalías. Detección sobre series temporales y flujos.</li>
-
 			      </ul>
 		        </div>
 		    </div>
@@ -421,13 +375,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingEight">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-				      8. Texto, grafos y sistemas de recomendación.
+				      8. Texto, grafos y sistemas de recomendación
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Aprendizaje automático sobre información textual. <i>NLTK</i> y <i>Spicy</i> </li>
 				      <li> Análisis de redes. <i>NetworkX</i> </li>
@@ -441,13 +394,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingNine">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-				      9. Visualización.
+				      9. Visualización y BI
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 			      	  <li> Principios de visualización. </li>
 				      <li> Herramientas avanzadas de visualización. </li>
@@ -461,13 +413,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingTen">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-				      10. Servicios en la nube.
+				      10. Servicios en la nube
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Introducción a la computación en la nube usando AWS  </li>
 				      <li> Despliegue de máquinas virtuales en AWS con Amazon Elastic Compute Cloud (EC2) </li>
@@ -482,13 +433,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingEleven">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-				      11. Servicios avanzados en la nube.
+				      11. Servicios avanzados en la nube
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
 		    <div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Diseño de arquitecturas altamente disponibles en la nube </li>
 				      <li> Seguridad en AWS. Usuarios, permisos y roles con AWS Identity and Access Management (IAM) </li>
@@ -504,13 +454,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingTwelve">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-				      12. Arquitecturas y procesos <i>Big Data</i>.
+				      12. Arquitecturas y procesos <i>Big Data</i>
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
 		    	<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Introducción a las tecnologías BigData </li>
 				      <li> Computación distribuida para Big Data con Apache Spark. </li>
@@ -525,15 +474,13 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingThirteen">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-				      13. Almacenes de datos: <i>Datalakes</i>.
+				      13. Almacenes de datos: <i>Datalakes</i>
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
 		    	<div class="panel-body">
-
-			      <h5>Contenido</h5>
-			      <ul>
+				  <ul>
 				      <li> Introducción al almacenamiento de datos como datalakes </li>
 				      <li> Procesos ETL (extracción, transformación y carga) con AWS Glue </li>
 				      <li> Mantenimiento e integridad de los datos </li>
@@ -547,13 +494,12 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingFourteen">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-				      14. Creación y despliegue de servicios.
+				      14. Creación y despliegue de servicios
 		        </a>
 		      </h4>
 		    </div>
 		    <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
 				<div class="panel-body">
-			      <h5>Contenido</h5>
 			      <ul>
 				      <li> Gestión de la arquitectura como códico (IaC) con AWS Cloudformation </li>
 				      <li> Despliegue de aplicaciones con el Serverless framework y con AWS Serverless Application Model (SAM)</li>
@@ -568,7 +514,7 @@ precio: 2520
 		    <div class="panel-heading" role="tab" id="headingFiveteen">
 		      <h4 class="panel-title">
 		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
-				      15. Trabajo fin de Máster.
+				      15. Trabajo fin de Máster
 		        </a>
 		      </h4>
 		    </div>
@@ -581,47 +527,44 @@ precio: 2520
 </section>
 
 <section id="profesores" class="container-fluid">
-	<div class="background-image">
-		<div id="profesoresimage"> </div>
-	</div>
-		<h2> Profesorado </h2>
+		<h2> Profesores</h2>
 		<div class="colaborator-sec container">
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
 						<h5>Luis de la Ossa Jiménez <b>(Director)</b></h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
-						<h5>Juan Ángel Aledo Sánchez	</h5>
+						<h5>Juan Ángel Aledo Sánchez</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
             <h5>Juan Carlos Alfaro Jiménez</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>Juan Ignacio Alonso Barba</h5>
-            <p>Servicios y Desarrollos Grupo Vermon</p>
+            <p>Trilogy</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
-            <h5>María Teresa Alonso Martínez </h5>
+            <h5>Franscisco Parreño Torres</h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>Jacinto Arias Martínez  </h5>
 						<p>taidy.cloud</p>
@@ -630,13 +573,13 @@ precio: 2520
 			</div>
 
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
             <h5>Pablo Bermejo López </h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>Javier Cózar del Olmo </h5>
 						<p>taidy.cloud</p>
@@ -645,13 +588,13 @@ precio: 2520
 			</div>
 
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
             <h5>María Julia Flores Gallego </h5>
 						<p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>José Antonio Gámez Martín </h5>
 						<p>Universidad de Castilla-La Mancha</p>
@@ -660,28 +603,28 @@ precio: 2520
 			</div>
 
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
             <h5>Daniel González Medina</h5>
 						<p>taidy.cloud</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>Enrique González Rodrigo </h5>
-						<p>Big Data for Business Solutions</p>
+						<p>Telefónica Digital España</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
             <h5>Jesus Martínez Gómez</h5>
-            <p>Servicios y Desarrollos Grupo Vermon</p>
+            <p>Universidad de Castilla-La Mancha</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>Jose Miguel Puerta Callejón	</h5>
 						<p>Universidad de Castilla-La Mancha</p>
@@ -690,16 +633,16 @@ precio: 2520
 			</div>
 
 			<div class="row">
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-4">
 					<div class="colaborator">
             <h5>Cristina Romero González </h5>
-            <p>Universidad de Castilla-La Mancha</p>
+            <p>Servicios y Desarrollos Grupo Vermon</p>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="colaborator">
             <h5>Fernando Rubio Perona </h5>
-            <p>Universidad de Castilla-La Mancha</p>
+            <p>V-Vision</p>
 					</div>
 				</div>
 
@@ -707,35 +650,37 @@ precio: 2520
 
 </section>
 
-<section id="inscripcion">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-offset-1 col-md-3 text-center inscripcion-item">
-				<h3 class="inscripcion-head">Número limitado de plazas</h3>
-				<p class="inscripcion-content">Nº de plazas: 25</p>
-			</div>
-			<div class="col-md-4 text-center inscripcion-item">
-				<h3 class="inscripcion-head">Matrícula abierta</h3>
-				<p id="block-inscribete"> <a id="btn-inscribete" href="{{ page.url_inscripcion }}" target="_blank">Inscríbete</a> </p>
-				<p id="matricula-proxima">Es necesario un usuario de la UCLM. Si no lo tienes, puedes crear uno nuevo en la página de la inscripción</p>
-
-			</div>
-			<div class="col-md-3 text-center inscripcion-item">
-				<h3 class="inscripcion-head"> Precio de matrícula </h3>
-				<p class="inscripcion-content">{{ page.precio }}€*</p>
-				<p id="matricula-proxima">*Bonificación del 25% a estudiantes y titulados del Master Universitario en Ingeniería Informática de la UCLM, y del Curso de Especialista en Ciencia de Datos y Desarrollo de Aplicaciones Escalables en la Nube</p>
-			</div>
-		</div>
-		<p id="pregunta"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#105;&#100;&#097;&#101;&#110;&#046;&#101;&#115;">¿Tienes alguna pregunta?</a> <p>
+<section id="inscripcion" class="container-fluid">
+	<div class="background-image">
+		<div id="inscripcionimage"> </div>
 	</div>
+	<h2>Inscripción</h2>
+	<div class="row">
+		<div class="col-md-offset-1 col-md-3 text-center inscripcion-item">
+			<h3 class="inscripcion-head">Plazas limitadas</h3>
+			<p class="inscripcion-content">Número de plazas disponibles: 30</p>
+		</div>
+		<div class="col-md-4 text-center inscripcion-item">
+			<h3 class="inscripcion-head">Matrícula abierta</h3>
+			<p id="block-inscribete"> <a id="btn-inscribete" href="{{ page.url_inscripcion }}" target="_blank">Inscríbete</a> </p>
+			<p id="matricula-proxima">Es necesario un usuario de la UCLM. Si no lo tienes, puedes crear uno nuevo en la página de la inscripción</p>
 
-
+		</div>
+		<div class="col-md-3 text-center inscripcion-item">
+			<h3 class="inscripcion-head"> Precio de matrícula </h3>
+			<p class="inscripcion-content">{{ page.precio }}€*</p>
+			<p id="matricula-proxima">* Bonificación del 25% a estudiantes y titulados del Master Universitario en Ingeniería Informática de la UCLM</p>
+		</div>
+	</div>
 </section>
 
 
 
 <footer id="contacto">
 	<div class="container-fluid">
+		<h1 id="pregunta">
+			¿Tienes alguna pregunta?
+		</h1>
 		<div class="row">
 			<div class="col-lg-2 col-lg-offset-2 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 footer-panel">
 				<div class="contacto">
@@ -774,7 +719,7 @@ precio: 2520
 							</td>
 							<td>
 								<p class="telefono">
-									<a href="{{ page.url_oficial }}" target="_blank"> Información oficial del curso </a>
+									<a href="{{ page.url_oficial }}" target="_blank">Información del curso </a>
 								</p>
 							</td>
 						</tr>
@@ -827,8 +772,8 @@ precio: 2520
 					<h3>Dirección</h3>
 					<p class="ldireccion">Escuela Superior de Ingeniería Informática de Albacete</p>
 					<p class="ldireccion">Edificio Infante Don Juan Manuel</p>
-					<p class="ldireccion">Avda. de España s/n</p>
-					<p class="ldireccion">02071 Albacete</p>
+					<p class="ldireccion">Avenida de España</p>
+					<p class="ldireccion">02071, Albacete</p>
 				</div>
 			</div>
 		</div>
