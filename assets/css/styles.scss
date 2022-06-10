@@ -172,11 +172,22 @@ header {
 	color: $color4;
 }
 
-.hero h3{
-	font-family: 'Barlow Condensed', sans-serif;
-	font-weight: 400;
-	font-size: 25px;
+.hero h2 {
+	margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
 	margin-bottom: 10px;
+	color: $color4;
+}
+
+.hero h3 {
+	margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 50px;
+	color: $color4;
 }
 
 .hero a.btn{
@@ -563,6 +574,42 @@ header {
 	font-family: 'Mulish', 'sans serif';
 	font-weight: bold;
 	color: $color4;
+}
+
+#content > h2 {
+	font-size: 24px;
+	margin-bottom: 40px;
+	font-family: 'Montserrat', 'sans serif';
+	font-weight: bold;
+	color: $color4;
+	margin-left: 100px;
+}
+
+#content .charla {
+	margin-bottom: 30px;
+	margin-left: 100px;
+}
+
+#content .charla > h3 {
+	font-size: 20px;
+	font-family: 'Montserrat', 'sans serif';
+	font-weight: bold;
+	color: $color4;
+}
+
+#content .charla > h4 {
+	font-size: 16px;
+	font-family: 'Roboto', 'sans serif';
+	font-weight: bold;
+	color: $color4;
+	margin-left: 50px;
+}
+
+#content .charla > p {
+	font-size: 16px;
+	font-family: 'Roboto', 'sans serif';
+	color: $color4;
+	margin-left: 50px;
 }
 
 #content .module .panel-heading {
