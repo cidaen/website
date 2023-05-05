@@ -153,7 +153,16 @@ header {
 .hero .bannertext .edition h2 {
 	margin: 0;
 	font-family: 'Mulish', sans-serif;
-	font-weight: bold;
+	// font-weight: bold;
+	font-size: 22px;
+	color: $color6;
+	padding: 12px 27px 10px 27px;
+}
+
+.hero .bannertext .edition h3 {
+	margin: 0;
+	font-family: 'Mulish', sans-serif;
+	// font-weight: bold;
 	font-size: 18px;
 	color: $color6;
 	padding: 12px 27px 10px 27px;
@@ -585,6 +594,15 @@ header {
 }
 
 #content > h2 {
+	font-size: 28px;
+	margin-bottom: 40px;
+	font-family: 'Montserrat', 'sans serif';
+	font-weight: bold;
+	color: $color4;
+	margin-left: 100px;
+}
+
+#content > h3 {
 	font-size: 24px;
 	margin-bottom: 40px;
 	font-family: 'Montserrat', 'sans serif';
